@@ -40,10 +40,15 @@ function PropertyDetail(props) {
   const crmImageList = useMemo(() => {
     if (!propertyData) return [];
 
-    return propertyData.crm_images.map((el) => ({
+    /**
+     * @type {Array<{ src: string, position: number }>}
+     */
+    const images = propertyData.crm_images.map((el) => ({
       src: el.image,
       position: el.position,
     }));
+
+    return images.sort((a, b) => a.position - b.position);
   }, [propertyData]);
 
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
@@ -51,8 +56,6 @@ function PropertyDetail(props) {
   const [facebookTags, setFacebookTags] = useState([]);
 
   const handlePhotoClick = (index) => {
-    console.log("🚀 ~ handlePhotoClick ~ index:", index);
-
     setActivePhotoIndex(index);
     setActivePhoto(true);
   };
