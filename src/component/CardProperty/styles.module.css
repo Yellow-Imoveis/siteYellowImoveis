@@ -1,0 +1,7 @@
+.isFavorite {
+  @apply block p-1 w-8 h-8 bg-white shadow rounded-full focus:text-slate-100 text-yellow-400 hover:text-slate-100;
+}
+
+.isNotFavorite {
+  @apply block p-1 w-8 h-8 bg-white shadow rounded-full text-slate-100 focus:text-yellow-400 hover:text-yellow-400;
+}
