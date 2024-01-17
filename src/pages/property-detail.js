@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { Link as Link2, useParams } from "react-router-dom";
 import withRouter from "../component/withrouter";
 import Navbar from "../component/Navbar";
@@ -16,35 +16,45 @@ import { useQuery } from "react-query";
 import Simulation from "../component/Simulation";
 import FacebookTags from "../component/FacebookTags";
 
+/**
+ * @param {Object} props
+ * @param {string} props.id
+ */
+function usePropertyQuery({ id }) {
+  const useQueryReturn = useQuery({
+    queryKey: ["properties", id],
+    queryFn: () => getProperty(id),
+  });
+
+  return useQueryReturn;
+}
+
 function PropertyDetail(props) {
-  const [photoIndex, setActiveIndex] = useState(0);
-  const [isOpen, setOpen] = useState(false);
-  const [images, setImages] = useState([]);
+  const { id } = useParams();
+  const { data: propertyData, isLoading } = usePropertyQuery({ id });
+
+  /**
+   * Array of images for the lightbox and hero
+   * @type {Array<{ src: string, position: number }>}
+   */
+  const crmImageList = useMemo(() => {
+    if (!propertyData) return [];
+
+    return propertyData.crm_images.map((el) => ({
+      src: el.image,
+      position: el.position,
+    }));
+  }, [propertyData]);
+
+  const [activePhotoIndex, setActivePhotoIndex] = useState(0);
+  const [isActivePhoto, setActivePhoto] = useState(false);
   const [facebookTags, setFacebookTags] = useState([]);
 
-  const { id } = useParams();
+  const handlePhotoClick = (index) => {
+    console.log("🚀 ~ handlePhotoClick ~ index:", index);
 
-  const { data, isFetching } = useQuery(
-    "properties",
-    async () => {
-      const property = await getProperty(id);
-      const images = property.crm_images.map((el) => {
-        return { src: el.image };
-      });
-      setImages(images);
-
-      generateFacebookTags(property);
-
-      return property;
-    },
-    {
-      refetchOnWindowFocus: false,
-    }
-  );
-
-  const handleCLick = (index) => {
-    setActiveIndex(index);
-    setOpen(true);
+    setActivePhotoIndex(index);
+    setActivePhoto(true);
   };
 
   const openSimulation = () => {
@@ -67,10 +77,16 @@ function PropertyDetail(props) {
     setFacebookTags(tags);
   };
 
+  useEffect(() => {
+    if (propertyData) {
+      generateFacebookTags(propertyData);
+    }
+  }, [propertyData]);
+
   return (
     <>
       {facebookTags && facebookTags.length > 0 && (
-        <FacebookTags tags={facebookTags} title={data?.title} />
+        <FacebookTags tags={facebookTags} title={propertyData?.title} />
       )}
 
       <Navbar />
@@ -82,11 +98,11 @@ function PropertyDetail(props) {
             {/* image 1 */}
             <div className="lg:w-1/2 md:w-1/2 p-1">
               <div className="group relative overflow-hidden">
-                {data?.crm_images && data?.crm_images.length > 0 && (
+                {crmImageList && crmImageList.length > 0 && (
                   <>
-                    <Link2 to="#" onClick={() => handleCLick(1)}>
+                    <Link2 to="#" onClick={() => handlePhotoClick(0)}>
                       <img
-                        src={data?.crm_images[0].image}
+                        src={crmImageList[0].src}
                         alt="Imagem Principal"
                         style={{
                           width: "100%",
@@ -109,81 +125,77 @@ function PropertyDetail(props) {
             <div className="lg:w-1/2 md:w-1/2">
               {/* images 2 and 3 */}
               <div className="flex">
-                {data?.crm_images &&
-                  data?.crm_images.length > 1 &&
-                  data?.crm_images.slice(1, 3).map((el, index) => (
-                    <div className="w-1/2 p-1" key={index}>
-                      <div className="group relative overflow-hidden">
-                        <Link2 to="#" onClick={() => handleCLick(1)}>
-                          <img
-                            src={el.image}
-                            alt={`Imagem ${index}`}
-                            style={{
-                              width: "100%",
-                              height: "250px",
-                              objectFit: "cover",
-                            }}
-                          />
-                          <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
-                          <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                            <div className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
-                              <i className="uil uil-camera"></i>
-                            </div>
+                {crmImageList?.slice(1, 3).map((el, index) => (
+                  <div className="w-1/2 p-1" key={index}>
+                    <div className="group relative overflow-hidden">
+                      <Link2 to="#" onClick={() => handlePhotoClick(index + 1)}>
+                        <img
+                          src={el.src}
+                          alt={`Imagem ${index}`}
+                          style={{
+                            width: "100%",
+                            height: "250px",
+                            objectFit: "cover",
+                          }}
+                        />
+                        <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
+                        <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
+                          <div className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
+                            <i className="uil uil-camera"></i>
                           </div>
-                        </Link2>
-                      </div>
+                        </div>
+                      </Link2>
                     </div>
-                  ))}
+                  </div>
+                ))}
               </div>
 
               {/* images 4 and 5 */}
               <div className="flex">
-                {data?.crm_images &&
-                  data?.crm_images.length > 3 &&
-                  data?.crm_images.slice(3, 5).map((el, index) => (
-                    <div className="w-1/2 p-1" key={index}>
-                      <div className="group relative overflow-hidden">
-                        <Link2 to="#" onClick={() => handleCLick(1)}>
-                          <img
-                            src={el.image}
-                            alt={`Imagem ${index}`}
-                            style={{
-                              width: "100%",
-                              height: "250px",
-                              objectFit: "cover",
-                            }}
-                          />
-                          <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
-                          <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                            <div className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
-                              <i className="uil uil-camera"></i>
-                            </div>
+                {crmImageList?.slice(3, 5).map((el, index) => (
+                  <div className="w-1/2 p-1" key={index}>
+                    <div className="group relative overflow-hidden">
+                      <Link2 to="#" onClick={() => handlePhotoClick(index + 3)}>
+                        <img
+                          src={el.src}
+                          alt={`Imagem ${index}`}
+                          style={{
+                            width: "100%",
+                            height: "250px",
+                            objectFit: "cover",
+                          }}
+                        />
+                        <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
+                        <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
+                          <div className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
+                            <i className="uil uil-camera"></i>
                           </div>
-                        </Link2>
-                      </div>
+                        </div>
+                      </Link2>
                     </div>
-                  ))}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
         {/* loading message */}
-        {isFetching && (
+        {isLoading && (
           <div className="flex h-full w-full justify-center items-center">
             Carregando...
           </div>
         )}
 
         {/* main content  */}
-        {data && !isFetching && (
+        {propertyData && !isLoading && (
           <div className="container md:mt-24 mt-16">
             <div className="md:flex">
               <div className="lg:w-2/3 md:w-1/2 md:p-4 px-3">
-                <h4 className="text-2xl font-medium">{data?.title}</h4>
+                <h4 className="text-2xl font-medium">{propertyData?.title}</h4>
                 <div className="pb-2">
                   <span className="font-light text-sm ease-in-out duration-500">
-                    Código: {data?.code}
+                    Código: {propertyData?.code}
                   </span>
                 </div>
 
@@ -204,33 +216,37 @@ function PropertyDetail(props) {
                   <li className="flex items-center lg:me-6 me-4">
                     <i className="uil uil-compress-arrows lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
-                      {data?.total_area} m<sup>2</sup>
+                      {propertyData?.total_area} m<sup>2</sup>
                     </span>
                   </li>
 
                   <li className="flex items-center lg:me-6 me-4">
                     <i className="uil uil-bed-double lg:text-3xl text-2xl me-2 text-green-600"></i>
-                    <span className="lg:text-xl">{data?.bedrooms} quartos</span>
+                    <span className="lg:text-xl">
+                      {propertyData?.bedrooms} quartos
+                    </span>
                   </li>
 
                   <li className="flex items-center lg:me-6 me-4">
                     <i className="uil uil-bath lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
-                      {data?.bathrooms} banheiros
+                      {propertyData?.bathrooms} banheiros
                     </span>
                   </li>
 
                   <li className="flex items-center">
                     <i className="uil uil-car-sideview lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
-                      {data?.garages} vagas de garagem
+                      {propertyData?.garages} vagas de garagem
                     </span>
                   </li>
                 </ul>
 
                 <div
                   className="text-slate-400"
-                  dangerouslySetInnerHTML={{ __html: data?.description }}
+                  dangerouslySetInnerHTML={{
+                    __html: propertyData?.description,
+                  }}
                 ></div>
 
                 {/* <div className="w-full leading-[0] border-0 mt-6">
@@ -244,14 +260,14 @@ function PropertyDetail(props) {
                     <div className="p-6">
                       <h5 className="text-2xl font-medium">Preço:</h5>
 
-                      {parseInt(data?.available_to_sell) === 1 &&
-                        parseInt(data?.price) > 0 && (
+                      {parseInt(propertyData?.available_to_sell) === 1 &&
+                        parseInt(propertyData?.price) > 0 && (
                           <div className="flex justify-between items-center mt-4">
                             <span className="text-xl font-medium">
                               {Intl.NumberFormat("pt-BR", {
                                 style: "currency",
                                 currency: "BRL",
-                              }).format(data?.price)}
+                              }).format(propertyData?.price)}
                             </span>
 
                             <span className="bg-yellow-500/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
@@ -260,14 +276,14 @@ function PropertyDetail(props) {
                           </div>
                         )}
 
-                      {parseInt(data?.available_to_rent) === 1 &&
-                        parseInt(data?.price_to_rent) > 0 && (
+                      {parseInt(propertyData?.available_to_rent) === 1 &&
+                        parseInt(propertyData?.price_to_rent) > 0 && (
                           <div className="flex justify-between items-center mt-4">
                             <span className="text-xl font-medium">
                               {Intl.NumberFormat("pt-BR", {
                                 style: "currency",
                                 currency: "BRL",
-                              }).format(data?.price_to_rent)}
+                              }).format(propertyData?.price_to_rent)}
                             </span>
 
                             <span className="bg-yellow-500/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
@@ -328,8 +344,8 @@ function PropertyDetail(props) {
                     </div>
                   </div>
 
-                  {parseInt(data?.available_to_sell) === 1 &&
-                    parseInt(data?.price) > 0 && (
+                  {parseInt(propertyData?.available_to_sell) === 1 &&
+                    parseInt(propertyData?.price) > 0 && (
                       <div className="mt-12 text-center">
                         <h3 className="text-xl leading-normal font-medium text-black dark:text-white">
                           Simular financiamento:
@@ -352,7 +368,7 @@ function PropertyDetail(props) {
                               </form>
                               <div>
                                 <Simulation
-                                  propertyInitialValue={data?.price}
+                                  propertyInitialValue={propertyData?.price}
                                   className="p-0 m-0"
                                 />
                               </div>
@@ -398,11 +414,12 @@ function PropertyDetail(props) {
       </section>
 
       {/* images slide show */}
-      {images && (
+      {crmImageList && (
         <Lightbox
-          open={isOpen}
-          close={() => setOpen(false)}
-          slides={images}
+          open={isActivePhoto}
+          close={() => setActivePhoto(false)}
+          slides={crmImageList}
+          index={activePhotoIndex}
           plugins={[Thumbnails, Fullscreen]}
         />
       )}
