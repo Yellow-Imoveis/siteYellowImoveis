@@ -42,7 +42,7 @@ export default function Footer() {
                                             <p className="text-slate-400 max-w-xl mx-auto">Inscreva-se para acompanhar as novidades.</p>
                                         </div>
 
-                                        <div className="subcribe-form z-1">
+                                        <div className="flex justify-center subcribe-form z-1">
                                             {mutation.isSuccess && (
                                                 <div className="alert alert-success" role="alert">
                                                     {mutation.data.message}
@@ -60,16 +60,16 @@ export default function Footer() {
                                                     Enviando...
                                                 </div>
                                             )}
-                                            <form onSubmit={handleSubmit(doSubmit)} className="relative max-w-lg md:ms-auto">
+                                            <form onSubmit={handleSubmit(doSubmit)} className="flex flex-col gap-y-4 relative max-w-lg md:ms-auto">
                                                 <input 
                                                     type="email" 
                                                     id="subcribe" 
                                                     name="email" 
-                                                    className="rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700" 
+                                                    className="px-8 md:pr-40 rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700" 
                                                     placeholder="Informe seu melhor e-mail :" 
                                                     {...register('email', { required: true, email: true })}
                                                 />
-                                                <button type="submit" className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-full">Inscrever-se</button>
+                                                <button type="submit" className="btn bg-yellow-500 static md:absolute hover:bg-yellow-600 text-white rounded-full">Inscrever-se</button>
                                             </form>
                                         </div>
                                     </div>

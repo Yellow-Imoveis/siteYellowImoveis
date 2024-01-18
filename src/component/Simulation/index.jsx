@@ -46,9 +46,9 @@ const Simulation = ({ propertyInitialValue }) => {
   };
 
   return (
-    <div className="md:my-16 md:py-12 shadow bg-slate-50">
+    <div className="md:my-16 p-6 text-center md:text-left md:py-12 shadow bg-slate-50">
       <div className="md:container">
-        <div className="md:flex justify-between items-start mb-8 md:space-x-4">
+        <div className="flex flex-col items-center xl:flex-row xl:gap-x-16 xl:items-start mb-8">
           <div>
             <h4 className="text-4xl mb-2">Simulador</h4>
             <p className="mb-8">
@@ -95,7 +95,7 @@ const Simulation = ({ propertyInitialValue }) => {
           <div className="my-4">
             {result && (
               <>
-                <div className="text-center md:px-16 md:py-8 w-full h-full shadow-lg bg-gray-50 rounded-xl border border-yellow-300">
+                <div className="text-center py-8 px-8 md:px-16 md:py-8 w-full h-full shadow-lg bg-gray-50 rounded-xl border border-yellow-300">
                   <span className="block text-lg mb-2">Valor da 1<sup>a</sup> parcela</span>
                   <span className="block text-3xl mb-4">{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(result.installmentValue)}</span>
 
