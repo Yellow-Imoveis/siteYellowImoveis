@@ -17,12 +17,13 @@ function Image({ src, index, containerClassName, onClick }) {
   return (
     <div
       className={tw("group relative", containerClassName)}
+      onClick={onClick}
     >
       <img
         src={src}
         className={"object-cover w-full h-full"}
         alt={`property ${index && index + 1}`}
-        onClick={onClick} />
+      />
 
       {/* hover effect */}
       <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
