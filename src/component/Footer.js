@@ -35,7 +35,7 @@ export default function Footer() {
                         <div className="relative py-16">
                             {/* <!-- Subscribe --> */}
                             <div className="relative w-full">
-                                <div className="relative -top-40 bg-white dark:bg-gray-950 teste-class lg:px-8 px-6 py-10 rounded-xl shadow-lg dark:shadow-gray-700 overflow-hidden">
+                                <div className="relative -top-40 bg-white dark:bg-gray-950 lg:px-8 px-6 py-10 rounded-xl shadow-lg dark:shadow-gray-700 overflow-hidden">
                                     <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                                         <div className="ltr:md:text-left rtl:md:text-right text-center z-1">
                                             <h3 className="md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Fique por dentro das novidades!</h3>
