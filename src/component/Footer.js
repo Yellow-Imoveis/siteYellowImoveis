@@ -88,7 +88,7 @@ export default function Footer() {
                                         <Link2 to="#" className="text-[22px] focus:outline-none">
                                             <img src={LogoLight} alt="" />
                                         </Link2>
-                                        <p className="mt-6 text-gray-300">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                                        <p className="mt-6 text-gray-300">Yellow Imóveis fazendo o futuro acontecer.</p>
 
                                     </div>
 
@@ -150,7 +150,7 @@ export default function Footer() {
                     <div className="container text-center">
                         <div className="grid md:grid-cols-2 items-center gap-6">
                             <div className="ltr:md:text-left rtl:md:text-right text-center">
-                                <p className="mb-0 text-gray-300">© <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/d87d581f/www-widgetapi.vflset/www-widgetapi.js"></script><script id="iframe_api" src="https://www.youtube.com/iframe_api"></script>{(new Date().getFullYear())}{" "} Yellow Imóveis. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <Link2 to="https://forepoint.com.br/" target="_blank" className="text-reset">Forepoint</Link2>.</p>
+                                <p className="mb-0 text-gray-300">© <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/d87d581f/www-widgetapi.vflset/www-widgetapi.js"></script><script id="iframe_api" src="https://www.youtube.com/iframe_api"></script>{(new Date().getFullYear())}{" "} Yellow Imóveis.</p>
                             </div>
 
                             <ul className="list-none ltr:md:text-right rtl:md:text-left text-center">
