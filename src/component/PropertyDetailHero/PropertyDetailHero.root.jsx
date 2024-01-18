@@ -22,7 +22,7 @@ function Root({ images, onClick }) {
 
   return (
     // 4x4 grid 
-    <div className="relative grid grid-cols-4 grid-rows-4 gap-2 h-screen md:h-[500px]">
+    <div className="relative px-2 grid grid-cols-4 grid-rows-4 gap-2 h-screen md:h-[500px]">
       {/* mobile: 4x2  */}
       {/* desktop: 2x4  */}
       <Image 
