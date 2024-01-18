@@ -163,14 +163,15 @@ export default function Contact() {
                             </div>
 
                             <div className="content mt-7">
-                                <h5 className="title h5 text-xl font-medium">Fone</h5>
+                                <h5 className="title h5 text-xl font-medium">Telefone</h5>
                                 <p className="text-slate-400 mt-3">
                                     Entre em contato conosco através dos telefones abaixo.
                                 </p>
 
                                 <div className="mt-5">
-                                    <a href="tel:+551146543334" className="btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">(11) 4654-3334</a> <br />
-                                    <a href="tel:+5511996800593" className="btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">(11) 99680-0593</a>
+                                    <a href="tel:+551146543334" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">(11) 4654-3334</a> <br />
+                                    <a href="tel:+5511996800593" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">(11) 99680-0593</a> <br />
+                                    <a href="tel:+5511996800593" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">(11) 95372-6237</a>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +191,9 @@ export default function Contact() {
                                 </p>
 
                                 <div className="mt-5">
-                                    <a href="mailto:contato@yellowimoveis.com.br" className="btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">contato@yellowimoveis.com.br</a>
+                                    <a href="mailto:contato@yellowimoveis.com.br" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">contato@yellowimoveis.com.br</a>
+                                    <a href="mailto:sac@yellowimoveis.com.br" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">sac@yellowimoveis.com.br</a>
+                                    <a href="mailto:recepcao@yellowimoveis.com.br" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">recepcao@yellowimoveis.com.br</a>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +212,7 @@ export default function Contact() {
 
                                 <div className="mt-5">
                                     <a href="https://www.google.com/maps/place/Yellow+Im%C3%B3veis/@-23.4176738,-46.3289174,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce7cf3e73126db:0x17c8e156136c3853!8m2!3d-23.4176738!4d-46.3263425!16s%2Fg%2F11g8dkkkf3?entry=ttu"
-                                        data-type="iframe" target="_blank" className="video-play-icon read-more lightbox btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">Ver no Google Maps</a>
+                                        data-type="iframe" target="_blank" className="video-play-icon read-more lightbox btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">Ver no Google Maps</a>
                                 </div>
                             </div>
                         </div>
