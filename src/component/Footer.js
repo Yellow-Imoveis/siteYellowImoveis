@@ -119,7 +119,7 @@ export default function Footer() {
                                             <MapPin className="w-5 h-5 text-green-600 me-3"></MapPin>
                                             <div className="">
                                                 <h6 className="text-gray-300 mb-2">Estr. de Santa Isabel, 2320 <br />Jardim Fazenda Rincao - Arujá - SP <br /></h6>
-                                                <a href="https://www.google.com/maps/place/Yellow+Im%C3%B3veis/@-23.4176738,-46.3289174,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce7cf3e73126db:0x17c8e156136c3853!8m2!3d-23.4176738!4d-46.3263425!16s%2Fg%2F11g8dkkkf3?entry=ttu" target="_blank" rel="noreferrer" className="text-green-600 hover:text-green-700 duration-500 ease-in-out lightbox">Ver no Google maps</a>
+                                                <a href="https://www.google.com/maps/place/Yellow+Im%C3%B3veis/@-23.4176738,-46.3289174,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce7cf3e73126db:0x17c8e156136c3853!8m2!3d-23.4176738!4d-46.3263425!16s%2Fg%2F11g8dkkkf3?entry=ttu" target="_blank" rel="noreferrer" className="text-yellow-500 hover:text-white duration-500 ease-in-out lightbox">Ver no Google maps</a>
                                             </div>
                                         </div>
 
