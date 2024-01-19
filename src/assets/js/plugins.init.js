@@ -7,7 +7,6 @@
    File Description: Common JS file of the template(plugins.init.js)
 */
 
-
 /*********************************/
 /*         INDEX                 */
 /*================================
@@ -42,7 +41,7 @@ if(document.getElementsByClassName('tiny-single-item').length > 0) {
         autoplayButtonOutput: false,
         autoplayTimeout: 3000,
         navPosition: "bottom",
-        speed: 400,
+        speed: 1000,
         gutter: 16,
         responsive: {
             1024: {

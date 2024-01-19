@@ -3620,10 +3620,19 @@ h6,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .tns-controls button[data-controls="prev"] {
-  inset-inline-start: 0px;
+  inset-inline-start: 150px;
 }
 .tns-controls button[data-controls="next"] {
-  inset-inline-end: 0px;
+  inset-inline-end: 150px;
+}
+
+@media(max-width: 1535px){
+  .tns-controls button[data-controls="prev"] {
+    inset-inline-start: 0;
+  }
+  .tns-controls button[data-controls="next"] {
+    inset-inline-end: 0;
+  }
 }
 
 /* RTL */
