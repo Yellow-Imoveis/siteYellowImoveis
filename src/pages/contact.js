@@ -187,7 +187,7 @@ export default function Contact() {
                             <div className="content mt-7">
                                 <h5 className="title h5 text-xl font-medium">Email</h5>
                                 <p className="text-slate-400 mt-3">
-                                    Entre em contato conosco através do email abaixo.
+                                    Entre em contato conosco através dos emails abaixo.
                                 </p>
 
                                 <div className="mt-5">
