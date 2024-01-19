@@ -1,7 +1,31 @@
+.favoriteButton {
+  display: block;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  border: 2px solid transparent; 
+}
+
 .isFavorite {
-  @apply block p-1 w-8 h-8 bg-white shadow rounded-full focus:text-slate-100 text-yellow-400 hover:text-slate-100;
+  @apply favoriteButton text-yellow-400;
 }
 
 .isNotFavorite {
-  @apply block p-1 w-8 h-8 bg-white shadow rounded-full text-slate-100 focus:text-yellow-400 hover:text-yellow-400;
+  @apply favoriteButton text-gray-300;
+}
+
+
+@media (min-width: 640px) {
+  .sm\:favoriteButton {
+    @apply w-6 h-6;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:favoriteButton {
+    @apply w-8 h-8;
+  }
 }
