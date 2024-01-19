@@ -30,9 +30,9 @@ export default function Favorites() {
             {favoriteItems && favoriteItems.length > 0 && (
                 <>
                     {/* <Search /> */}
-                    <section className="relative lg:py-24 py-16">
-                        <div className="container">
-                            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 md:gap-4">
+                    <section className="lg:py-24 py-16">
+                        <div className="px-12 md:container">
+                            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4">
                                 {favoriteItems.map((item, index) => (
                                     <CardProperty key={index} property={item} />
                                 ))}
