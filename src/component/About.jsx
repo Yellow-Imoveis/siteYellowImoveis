@@ -68,7 +68,7 @@ export default function About() {
                             <div className="lg:ms-4 about-content"> <h2>&nbsp;</h2>
                                 <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Conhe&ccedil;a a Yellow&nbsp;Im&oacute;veis</h2>
                                 <p>Nossa imobiliária conta com uma equipe multidisciplinar de profissionais tais como: Personal Broker, administração de imóveis, arquitetura ambiental, engenharia, construção, licenças e regularização de áreas/obras e assessoria jurídica oferecendo todo respaldo que você necessita para realizar o seu negócio. Atendemos empresas multinacionais e nacionais, expansão logística, lançamentos, condomínios, bairros, comércios, residenciais, locação/venda entre outros.&nbsp;</p>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 space-x-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                     <div class="text-center col-span-1 sm:col-span-1 md:col-span-1"><img class="mx-auto" src="https://yellowimoveis.s3.amazonaws.com/site/yellow-pin.JPG" alt="Pin Yellow" width="100" height="100" />
                                         <h3 class="font-bold">Miss&atilde;o</h3>
                                         <p class="text-center">Oferecer solu&ccedil;&otilde;es imobili&aacute;rias inteligentes, que atendam as necessidades e expectativas dos nossos clientes, garantindo a satisfa&ccedil;&atilde;o e confian&ccedil;a nos nossos servi&ccedil;os.</p>
