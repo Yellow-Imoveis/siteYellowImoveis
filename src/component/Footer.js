@@ -89,7 +89,7 @@ export default function Footer() {
                                         <Link2 to="#" className="text-[22px] focus:outline-none">
                                             <img src={LogoLight} alt="" />
                                         </Link2>
-                                        <p className="mt-6 text-gray-300">Yellow Imóveis fazendo o futuro acontecer.</p>
+                                        <p className="text-center mt-6 text-gray-300">Yellow Imóveis fazendo o futuro acontecer.</p>
                                         <img className="mt-6" src={LogoSP} alt="Logo SP"/>
                                     </div>
 
