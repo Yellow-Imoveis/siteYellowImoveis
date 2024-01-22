@@ -7,7 +7,6 @@
    File Description: Common JS file of the template(plugins.init.js)
 */
 
-
 /*********************************/
 /*         INDEX                 */
 /*================================
@@ -34,7 +33,6 @@
 if(document.getElementsByClassName('tiny-single-item').length > 0) {
     var slider = tns({
         container: '.tiny-single-item',
-        items: 1,
         controls: false,
         mouseDrag: true,
         loop: true,
@@ -43,8 +41,16 @@ if(document.getElementsByClassName('tiny-single-item').length > 0) {
         autoplayButtonOutput: false,
         autoplayTimeout: 3000,
         navPosition: "bottom",
-        speed: 400,
+        speed: 1000,
         gutter: 16,
+        responsive: {
+            1024: {
+                items: 2
+            },
+            992: {
+                items: 1
+            }
+        }
     });
 };
 

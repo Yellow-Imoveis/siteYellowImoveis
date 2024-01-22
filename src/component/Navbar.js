@@ -176,7 +176,7 @@ export default function Navbar(props) {
                             
                             <Link 
                                 to="/favoritos" 
-                                className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-full md:hidden indicator"
+                                className="btn btn-icon bg-yellow-500 ml-4 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-full md:hidden indicator"
                             >
                                 <i className="pi pi-heart-fill"></i>
                             </Link>

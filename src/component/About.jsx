@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link as Link2 } from "react-router-dom";
 import ModalVideo from "react-modal-video";
+import { Hexagon } from "react-feather";
+import YellowPin from "../assets/images/yellow-pin.JPG";
 
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
 import { useQuery } from "react-query";
@@ -12,7 +14,7 @@ export default function About() {
 
     const { isLoading, data, isError } = useQuery('dadosDaEmpresa', async () => {
         const res = await getSetting('sobre-nos');
-        console.log("resultado", res);
+        //console.log("resultado", res);
 
         return { setting: res };
 

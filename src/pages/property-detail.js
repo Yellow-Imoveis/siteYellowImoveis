@@ -134,7 +134,7 @@ function PropertyDetail(props) {
                                     </span>
                                 </div> */}
 
-                <ul className="py-6 flex items-center list-none">
+                <ul className="py-6 flex flex-wrap items-center list-none">
                   <li className="flex items-center lg:me-6 me-4">
                     <i className="uil uil-compress-arrows lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
@@ -185,7 +185,7 @@ function PropertyDetail(props) {
                       {parseInt(propertyData?.available_to_sell) === 1 &&
                         parseInt(propertyData?.price) > 0 && (
                           <div className="flex justify-between items-center mt-4">
-                            <span className="text-xl font-medium">
+                            <span className="text-lg font-medium">
                               {Intl.NumberFormat("pt-BR", {
                                 style: "currency",
                                 currency: "BRL",
