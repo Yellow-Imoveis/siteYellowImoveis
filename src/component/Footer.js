@@ -1,6 +1,7 @@
 import React from "react";
 import { Link as Link2 } from "react-router-dom";
 import LogoLight from "../assets/images/logo-rodape.png";
+import LogoSP from "../assets/images/logo-governo-do-estado-sp.png"
 import { MapPin, Mail, Phone, Dribbble, Linkedin, Facebook, Twitter, Instagram, ShoppingCart, Youtube } from 'react-feather';
 import { useForm } from "react-hook-form";
 import { useMutation } from "react-query";
@@ -84,12 +85,12 @@ export default function Footer() {
                                 </div>
 
                                 <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px] -mt-24">
-                                    <div className="lg:col-span-4 md:col-span-12">
+                                    <div className="flex flex-col items-center lg:col-span-4 md:col-span-12">
                                         <Link2 to="#" className="text-[22px] focus:outline-none">
                                             <img src={LogoLight} alt="" />
                                         </Link2>
                                         <p className="mt-6 text-gray-300">Yellow Imóveis fazendo o futuro acontecer.</p>
-
+                                        <img className="mt-6" src={LogoSP} alt="Logo SP"/>
                                     </div>
 
                                     <div className="lg:col-span-2 md:col-span-4">

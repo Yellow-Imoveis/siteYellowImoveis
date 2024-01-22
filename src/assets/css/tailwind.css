@@ -3626,6 +3626,18 @@ h6,
   inset-inline-end: 150px;
 }
 
+#tns1-ow .tns-controls button[data-controls="prev"] {
+  left: 0;
+}
+
+#tns1-ow .tns-controls button[data-controls="next"] {
+  right: 0;
+}
+
+#tns2-mw.tns-ovh{
+  padding-bottom: 10px;
+}
+
 @media(max-width: 1535px){
   .tns-controls button[data-controls="prev"] {
     inset-inline-start: 0;
