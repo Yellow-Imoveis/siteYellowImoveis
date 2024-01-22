@@ -11,7 +11,7 @@ function Root({ images, onClick }) {
   if (images.length === 0) return null;
 
   const firstImage = images[0];
-  const restImages = images.slice(1);
+  const restImages = images.slice(1, 5);
 
   if (images.length === 1) return (
     <Image
