@@ -1,6 +1,7 @@
 import React from "react";
 import { Link as Link2 } from "react-router-dom";
 import LogoLight from "../assets/images/logo-rodape.png";
+import LogoSP from "../assets/images/logo-governo-do-estado-sp.png"
 import { MapPin, Mail, Phone, Dribbble, Linkedin, Facebook, Twitter, Instagram, ShoppingCart, Youtube } from 'react-feather';
 import { useForm } from "react-hook-form";
 import { useMutation } from "react-query";
@@ -42,7 +43,7 @@ export default function Footer() {
                                             <p className="text-slate-400 max-w-xl mx-auto">Inscreva-se para acompanhar as novidades.</p>
                                         </div>
 
-                                        <div className="subcribe-form z-1">
+                                        <div className="flex justify-center subcribe-form z-1">
                                             {mutation.isSuccess && (
                                                 <div className="alert alert-success" role="alert">
                                                     {mutation.data.message}
@@ -60,16 +61,16 @@ export default function Footer() {
                                                     Enviando...
                                                 </div>
                                             )}
-                                            <form onSubmit={handleSubmit(doSubmit)} className="relative max-w-lg md:ms-auto">
+                                            <form onSubmit={handleSubmit(doSubmit)} className="flex flex-col gap-y-4 relative max-w-lg md:ms-auto">
                                                 <input 
                                                     type="email" 
                                                     id="subcribe" 
                                                     name="email" 
-                                                    className="rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700" 
+                                                    className="px-8 md:pr-40 rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700" 
                                                     placeholder="Informe seu melhor e-mail :" 
                                                     {...register('email', { required: true, email: true })}
                                                 />
-                                                <button type="submit" className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-full">Inscrever-se</button>
+                                                <button type="submit" className="btn bg-yellow-500 static md:absolute hover:bg-yellow-600 text-white rounded-full">Inscrever-se</button>
                                             </form>
                                         </div>
                                     </div>
@@ -84,12 +85,12 @@ export default function Footer() {
                                 </div>
 
                                 <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px] -mt-24">
-                                    <div className="lg:col-span-4 md:col-span-12">
+                                    <div className="flex flex-col items-center lg:col-span-4 md:col-span-12">
                                         <Link2 to="#" className="text-[22px] focus:outline-none">
                                             <img src={LogoLight} alt="" />
                                         </Link2>
-                                        <p className="mt-6 text-gray-300">Yellow Imóveis fazendo o futuro acontecer.</p>
-
+                                        <p className="text-center mt-6 text-gray-300">Yellow Imóveis fazendo o futuro acontecer.</p>
+                                        <img className="mt-6" src={LogoSP} alt="Logo SP"/>
                                     </div>
 
                                     <div className="lg:col-span-2 md:col-span-4">

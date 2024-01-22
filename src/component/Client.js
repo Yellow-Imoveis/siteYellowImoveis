@@ -9,12 +9,13 @@ import { data } from "autoprefixer";
 
 const settings = {
     items: 1,
-    controls: false,
+    controlsText: ['<', '>'],
     mouseDrag: true,
     loop: true,
     rewind: true,
     autoplay: true,
     autoplayButtonOutput: false,
+    autoplayTimeout: 10000,
     navPosition: "bottom",
     animateDelay: 3000,
 };

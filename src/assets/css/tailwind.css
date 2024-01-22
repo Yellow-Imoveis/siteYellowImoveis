@@ -2407,8 +2407,6 @@ h6,
 #topnav .navigation-menu > li > a {
   display: block;
   background-color: transparent;
-  padding-left: 15px;
-  padding-right: 15px;
   font-family: "League Spartan", sans-serif;
   font-size: 17px;
   line-height: 24px;
@@ -3620,10 +3618,31 @@ h6,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .tns-controls button[data-controls="prev"] {
-  inset-inline-start: 0px;
+  inset-inline-start: 150px;
 }
 .tns-controls button[data-controls="next"] {
-  inset-inline-end: 0px;
+  inset-inline-end: 150px;
+}
+
+#tns1-ow .tns-controls button[data-controls="prev"] {
+  left: 0;
+}
+
+#tns1-ow .tns-controls button[data-controls="next"] {
+  right: 0;
+}
+
+#tns2-mw.tns-ovh{
+  padding-bottom: 10px;
+}
+
+@media(max-width: 1535px){
+  .tns-controls button[data-controls="prev"] {
+    inset-inline-start: 0;
+  }
+  .tns-controls button[data-controls="next"] {
+    inset-inline-end: 0;
+  }
 }
 
 /* RTL */

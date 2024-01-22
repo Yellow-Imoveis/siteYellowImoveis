@@ -6,17 +6,25 @@ import TinySlider from "tiny-slider-react";
 import { useEffect, useState } from "react";
 
 const settings = {
-    items: 4,
-    controls: false,
+    items: 1,
+    controlsText: ['<', '>'],
     mouseDrag: true,
     loop: true,
     rewind: true,
     autoplay: true,
     autoplayButtonOutput: false,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 5000,
     navPosition: "bottom",
     speed: 400,
     gutter: 16,
+    responsive: {
+        640: {
+            items: 2
+        },
+        1024: {
+            items: 4
+        }
+    }
 };
 
 export default function Property() {
@@ -71,6 +79,10 @@ export default function Property() {
                             <TinySlider settings={sliderSettings} >
                                 {res && res.map((item, index) => (
                                     <div className="tiny-slide" key={index}>
+                                    <div className="buttons-container">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
                                         <CardProperty property={item} />
                                     </div>
                                 ))}
