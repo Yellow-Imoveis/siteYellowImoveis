@@ -1,7 +1,6 @@
 import React from "react";
 import { Link as Link2 } from "react-router-dom";
 import LogoLight from "../assets/images/logo-rodape.png";
-import LogoSP from "../assets/images/logo-governo-do-estado-sp.png"
 import { MapPin, Mail, Phone, Dribbble, Linkedin, Facebook, Twitter, Instagram, ShoppingCart, Youtube } from 'react-feather';
 import { useForm } from "react-hook-form";
 import { useMutation } from "react-query";
@@ -90,7 +89,6 @@ export default function Footer() {
                                             <img src={LogoLight} alt="" />
                                         </Link2>
                                         <p className="text-center mt-6 text-gray-300">Yellow Imóveis fazendo o futuro acontecer.</p>
-                                        <img className="mt-6" src={LogoSP} alt="Logo SP"/>
                                     </div>
 
                                     <div className="lg:col-span-2 md:col-span-4">
