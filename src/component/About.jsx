@@ -36,16 +36,17 @@ export default function About() {
                         <div className="md:col-span-12">
                             <div className="flex justify-center items-center mb-16">
 
-                                <div className="relative">
-                                    <img src="https://i.ytimg.com/vi/oz6mCiWYfnk/hqdefault.jpg" alt="Vídeo institucional" />
+                                <iframe 
+                                    width="100%" 
+                                    height="500" 
+                                    src={`https://www.youtube.com/embed/oz6mCiWYfnk?rel=0&amp;autoplay=0&mute=1&controls=1&loop=1`} 
+                                    title="YouTube video player"
+                                    autoplay="0"
+                                    frameborder="0"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen="true"
+                                ></iframe>
 
-                                    {/* put a play button in the middle */}
-                                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                        <button onClick={() => setOpen(true)} className="bg-red-600 border-2 border-red-600 rounded-lg h-16 w-24 flex items-center justify-center">
-                                            <i className="mdi mdi-play text-white text-4xl"></i>
-                                        </button>
-                                    </div>
-                                </div>
                                 {/* <div className="hidden md:block">
                                     <video width="890" height="440" controls autoPlay={false} className="mb-8">
                                         <source src="https://yellowimoveis.s3.amazonaws.com/videos/yellow-video-sobre-nos.mp4" type="video/mp4" />
@@ -125,6 +126,7 @@ export default function About() {
                 url="https://yellowimoveis.s3.amazonaws.com/videos/yellow-video-sobre-nos.mp4"
                 onClose={() => setOpen(false)}
             /> */}
+
             <ModalVideo
                 isOpen={isOpen}
                 channel="youtube"
