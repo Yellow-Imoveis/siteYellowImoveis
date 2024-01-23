@@ -47,7 +47,7 @@ export default function IndexTwo() {
 
     return (
         <>
-            <Navbar navClass="navbar-white" />
+            <Navbar />
             {/* Hero Start  */}
             <section className="relative table w-full py-36 lg:py-44 overflow-hidden zoom-image">
                 <div

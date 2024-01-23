@@ -2101,7 +2101,7 @@ h6,
   top: 0px;
   z-index: 999;
   border-width: 0px;
-  background-color: transparent;
+  background-color: #FFFFFF;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 500ms;
@@ -2408,7 +2408,7 @@ h6,
   display: block;
   background-color: transparent;
   font-family: "League Spartan", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   line-height: 1.5rem;

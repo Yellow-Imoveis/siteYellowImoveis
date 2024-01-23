@@ -8,7 +8,7 @@ import Switcher from "../component/Switcher";
 export default function Pricing() {
     return (
         <>
-            <Navbar navClass="navbar-white" />
+            <Navbar />
             {/* <!-- Start Hero --> */}
             <section
                 style={{ backgroundImage: `url(${BackgroudImage})` }}

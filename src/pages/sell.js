@@ -27,7 +27,7 @@ export default function Sell() {
 
     return (
         <>
-            <Navbar navClass="navbar-white" />
+            <Navbar />
             {/* <!-- Start Hero --> */}
 
             <section

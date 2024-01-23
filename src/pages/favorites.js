@@ -14,7 +14,7 @@ export default function Favorites() {
 
     return (
         <>
-            <Navbar navClass="navbar-white" />
+            <Navbar />
 
             <section className="relative table w-full py-32 lg:py-36 bg-[url('../../assets/images/bg/07.png')] bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-black opacity-80"></div>
