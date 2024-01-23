@@ -28,7 +28,7 @@ export default function CardProperty({ property }) {
     return (
         <>
             <Link to={`/imovel/${property.slug}`}>
-                <div className="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 h-[730px] overflow-x-hidden ease-in-out duration-500">
+                <div className="group rounded-xl bg-white border border-gray-400 dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 h-[730px] overflow-x-hidden ease-in-out duration-500">
                     <div className="relative">
                         {property.crm_images && property.crm_images.length > 0 && (
                             <div style={{ overflow: 'hidden' }}>
