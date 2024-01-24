@@ -154,7 +154,7 @@ export default function Contact() {
 
                 <div className="container lg:mt-24 mt-16">
                     <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
-                        <div className="text-center px-6">
+                        <div className="shadow-[1px_3px_8px_rgba(0,0,0,0.24)] rounded-lg py-4 text-center px-6">
                             <div className="relative overflow-hidden text-transparent -m-3">
                                 <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
                                 <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
@@ -176,7 +176,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <div className="text-center px-6">
+                        <div className="shadow-[1px_3px_8px_rgba(0,0,0,0.24)] rounded-lg py-4 text-center px-6">
                             <div className="relative overflow-hidden text-transparent -m-3">
                                 <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
                                 <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
@@ -197,8 +197,7 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="text-center px-6">
+                        <div className="shadow-[1px_3px_8px_rgba(0,0,0,0.24)] rounded-lg py-4 text-center px-6">
                             <div className="relative overflow-hidden text-transparent -m-3">
                                 <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
                                 <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">

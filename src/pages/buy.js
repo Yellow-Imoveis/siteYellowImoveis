@@ -14,7 +14,7 @@ export default function Buy() {
 
     return (
         <>
-            <Navbar navClass="navbar-white" />
+            <Navbar />
             {/* <!-- Start Hero --> */}
             <section
                 style={{ backgroundImage: `url(${BackgroundImage})` }}
