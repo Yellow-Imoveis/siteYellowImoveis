@@ -25,6 +25,13 @@
     transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 640px){
+  .pagination{
+    flex-wrap: wrap;
+    gap: 24px 0;
+  }
+}
+
 .category-highlight .buttons {
   display: none !important;
 }

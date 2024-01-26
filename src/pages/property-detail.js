@@ -15,6 +15,7 @@ import { getProperty } from "../providers/property";
 import { useQuery } from "react-query";
 import Simulation from "../component/Simulation";
 import FacebookTags from "../component/FacebookTags";
+import PropertyDetailHero from "../component/PropertyDetailHero";
 
 /**
  * @param {Object} props
@@ -96,92 +97,10 @@ function PropertyDetail(props) {
 
       {/* hero */}
       <section className="relative md:pb-24 pb-16 mt-20">
-        <div className="container-fluid">
-          <div className="md:flex mt-4">
-            {/* image 1 */}
-            <div className="lg:w-1/2 md:w-1/2 p-1">
-              <div className="group relative overflow-hidden">
-                {crmImageList && crmImageList.length > 0 && (
-                  <>
-                    <Link2 to="#" onClick={() => handlePhotoClick(0)}>
-                      <img
-                        src={crmImageList[0].src}
-                        alt="Imagem Principal"
-                        style={{
-                          width: "100%",
-                          height: "510px",
-                          objectFit: "cover",
-                        }}
-                      />
-                      <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
-                      <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                        <div className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
-                          <i className="uil uil-camera"></i>
-                        </div>
-                      </div>
-                    </Link2>
-                  </>
-                )}
-              </div>
-            </div>
-
-            <div className="lg:w-1/2 md:w-1/2">
-              {/* images 2 and 3 */}
-              <div className="flex">
-                {crmImageList?.slice(1, 3).map((el, index) => (
-                  <div className="w-1/2 p-1" key={index}>
-                    <div className="group relative overflow-hidden">
-                      <Link2 to="#" onClick={() => handlePhotoClick(index + 1)}>
-                        <img
-                          src={el.src}
-                          alt={`Imagem ${index}`}
-                          style={{
-                            width: "100%",
-                            height: "250px",
-                            objectFit: "cover",
-                          }}
-                        />
-                        <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
-                        <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                          <div className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
-                            <i className="uil uil-camera"></i>
-                          </div>
-                        </div>
-                      </Link2>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* images 4 and 5 */}
-              <div className="flex">
-                {crmImageList?.slice(3, 5).map((el, index) => (
-                  <div className="w-1/2 p-1" key={index}>
-                    <div className="group relative overflow-hidden">
-                      <Link2 to="#" onClick={() => handlePhotoClick(index + 3)}>
-                        <img
-                          src={el.src}
-                          alt={`Imagem ${index}`}
-                          style={{
-                            width: "100%",
-                            height: "250px",
-                            objectFit: "cover",
-                          }}
-                        />
-                        <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
-                        <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
-                          <div className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
-                            <i className="uil uil-camera"></i>
-                          </div>
-                        </div>
-                      </Link2>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        <PropertyDetailHero
+          images={crmImageList}
+          onClick={(index) => handlePhotoClick(index)}
+        />
 
         {/* loading message */}
         {isLoading && (
@@ -215,7 +134,7 @@ function PropertyDetail(props) {
                                     </span>
                                 </div> */}
 
-                <ul className="py-6 flex items-center list-none">
+                <ul className="py-6 flex flex-wrap items-center list-none">
                   <li className="flex items-center lg:me-6 me-4">
                     <i className="uil uil-compress-arrows lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
@@ -266,7 +185,7 @@ function PropertyDetail(props) {
                       {parseInt(propertyData?.available_to_sell) === 1 &&
                         parseInt(propertyData?.price) > 0 && (
                           <div className="flex justify-between items-center mt-4">
-                            <span className="text-xl font-medium">
+                            <span className="text-lg font-medium">
                               {Intl.NumberFormat("pt-BR", {
                                 style: "currency",
                                 currency: "BRL",
@@ -386,8 +305,8 @@ function PropertyDetail(props) {
                       Compartilhe:
                     </h3>
 
-                    <div className="mt-2 flex justify-center items-center space-x-4">
-                      <Link2
+                    <div className="mt-2 flex flex-wrap justify-center items-center gap-4">
+                      {/* <Link2
                         to="#"
                         className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
                       >
@@ -398,14 +317,22 @@ function PropertyDetail(props) {
                         className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
                       >
                         <i className="uil uil-instagram align-middle"></i>
-                      </Link2>
+                      </Link2> */}
                       <a
-                        href={`https://wa.me/5511996800593`}
+                        href={`https://api.whatsapp.com/send?text=${window.location.href}`}
                         rel="noreferrer"
                         target="_blank"
                         className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
                       >
                         <i className="uil uil-whatsapp align-middle"></i>
+                      </a>
+                      <a
+                        href={`https://twitter.com/messages/compose?text=${window.location.href}`}
+                        rel="noreferrer"
+                        target="_blank"
+                        className="twitter-dm-button btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                      >
+                        <i className="uil uil-twitter align-middle"></i>
                       </a>
                     </div>
                   </div>

@@ -358,7 +358,7 @@ const SearchForm = ({ option, handleSubmitForm }) => {
 
           <div className="lg:mt-6">
             <div className="flex justify-start items-center space-x-8">
-              <input type="submit" id="search-buy" name="search" className="btn bg-yellow-500 hover:bg-yellow-600 border-green-600 hover:border-green-700 text-white searchbtn submit-btn !h-12 rounded" value="Buscar" />
+              <input type="submit" id="search-buy" name="search" className="btn bg-yellow-500 w-full mt-4 lg:w-max lg:mt-0 hover:bg-yellow-600 hover: text-white searchbtn submit-btn cursor-pointer !h-12 rounded" value="Buscar" />
               
               {showAdvancedButtonSearch && (
                 <button type="button" className="hidden btn btn-link lowercase text-gray-500 font-light" onClick={() => setShowAdvancedSearch(!showAdvancedSearch)}>

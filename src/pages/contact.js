@@ -154,7 +154,7 @@ export default function Contact() {
 
                 <div className="container lg:mt-24 mt-16">
                     <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
-                        <div className="text-center px-6">
+                        <div className="shadow-[1px_3px_8px_rgba(0,0,0,0.24)] rounded-lg py-4 text-center px-6">
                             <div className="relative overflow-hidden text-transparent -m-3">
                                 <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
                                 <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
@@ -163,19 +163,20 @@ export default function Contact() {
                             </div>
 
                             <div className="content mt-7">
-                                <h5 className="title h5 text-xl font-medium">Fone</h5>
+                                <h5 className="title h5 text-xl font-medium">Telefone</h5>
                                 <p className="text-slate-400 mt-3">
                                     Entre em contato conosco através dos telefones abaixo.
                                 </p>
 
                                 <div className="mt-5">
-                                    <a href="tel:+551146543334" className="btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">(11) 4654-3334</a> <br />
-                                    <a href="tel:+5511996800593" className="btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">(11) 99680-0593</a>
+                                    <a href="tel:+551146543334" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">(11) 4654-3334</a> <br />
+                                    <a href="tel:+5511996800593" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">(11) 99680-0593</a> <br />
+                                    <a href="tel:+5511996800593" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">(11) 95372-6237</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="text-center px-6">
+                        <div className="shadow-[1px_3px_8px_rgba(0,0,0,0.24)] rounded-lg py-4 text-center px-6">
                             <div className="relative overflow-hidden text-transparent -m-3">
                                 <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
                                 <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
@@ -186,16 +187,17 @@ export default function Contact() {
                             <div className="content mt-7">
                                 <h5 className="title h5 text-xl font-medium">Email</h5>
                                 <p className="text-slate-400 mt-3">
-                                    Entre em contato conosco através do email abaixo.
+                                    Entre em contato conosco através dos emails abaixo.
                                 </p>
 
                                 <div className="mt-5">
-                                    <a href="mailto:contato@yellowimoveis.com.br" className="btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">contato@yellowimoveis.com.br</a>
+                                    <a href="mailto:contato@yellowimoveis.com.br" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">contato@yellowimoveis.com.br</a>
+                                    <a href="mailto:sac@yellowimoveis.com.br" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">sac@yellowimoveis.com.br</a>
+                                    <a href="mailto:recepcao@yellowimoveis.com.br" className="btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">recepcao@yellowimoveis.com.br</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div className="text-center px-6">
+                        <div className="shadow-[1px_3px_8px_rgba(0,0,0,0.24)] rounded-lg py-4 text-center px-6">
                             <div className="relative overflow-hidden text-transparent -m-3">
                                 <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
                                 <div className="absolute top-2/4 -translate-y-2/4 start-0 end-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
@@ -209,7 +211,7 @@ export default function Contact() {
 
                                 <div className="mt-5">
                                     <a href="https://www.google.com/maps/place/Yellow+Im%C3%B3veis/@-23.4176738,-46.3289174,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce7cf3e73126db:0x17c8e156136c3853!8m2!3d-23.4176738!4d-46.3263425!16s%2Fg%2F11g8dkkkf3?entry=ttu"
-                                        data-type="iframe" target="_blank" className="video-play-icon read-more lightbox btn btn-link text-green-600 hover:text-green-600 after:bg-yellow-500 transition duration-500">Ver no Google Maps</a>
+                                        data-type="iframe" target="_blank" className="video-play-icon read-more lightbox btn btn-link text-yellow-500 hover:text-dark after:bg-yellow-500 transition duration-500">Ver no Google Maps</a>
                                 </div>
                             </div>
                         </div>

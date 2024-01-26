@@ -150,23 +150,15 @@ export default function Navbar(props) {
 
     return (
         <React.Fragment>
-            <nav id="topnav" className={`defaultscroll is-sticky ${topnavClass ? topnavClass : ''}`} >
+            <nav id="topnav" >
                 {console.log(topnavClass)}
-                <div className={`${topnavClass !== '' && topnavClass !== undefined ? 'container-fluid md:px-8 px-3' : 'container'}`}>
+                <div className={`${topnavClass !== '' && topnavClass !== undefined ? 'container-fluid md:px-8 px-3' : 'container py-2'}`}>
                     {/* <!-- Logo container--> */}
-                    {navClass === '' || navClass === undefined ?
+
                         <Link className="logo" to="/">
-                            <img src={LogoDark} className="inline-block dark:hidden w-32" alt="" />
-                            <img src={LogoLight} className="hidden dark:inline-block w-32" alt="" />
-                        </Link> :
-                        <Link className="logo" to="/">
-                            <span className="inline-block dark:hidden">
-                                <img src={LogoDark} className="l-dark w-32" height="24" alt="" />
-                                <img src={LogoLight} className="l-light w-32" height="24" alt="" />
-                            </span>
-                            <img src={LogoLight} height="24" className="hidden dark:inline-block" alt="" />
+                            <img src={LogoDark} className="inline-block dark:hidden" alt="" />
                         </Link>
-                    }
+                    
                     {/* <!-- End Logo container--> */}
 
                     {/* <!-- Start Mobile Toggle --> */}
@@ -176,7 +168,7 @@ export default function Navbar(props) {
                             
                             <Link 
                                 to="/favoritos" 
-                                className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-full md:hidden indicator"
+                                className="btn btn-icon bg-yellow-500 sm:ml-4 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-full md:hidden indicator"
                             >
                                 <i className="pi pi-heart-fill"></i>
                             </Link>
@@ -212,7 +204,7 @@ export default function Navbar(props) {
                             <li><Link to="/sobre-nos" className="sub-menu-item">Sobre nós</Link></li>
                             <li><Link to="/depoimento" className="sub-menu-item">Depoimento</Link></li>
 
-                            <li><Link to="/favoritos" className="sub-menu-item">Meus favoritos ({favoriteItems.length})</Link></li>
+                            <li><Link to="/favoritos" className="sub-menu-item">Favoritos ({favoriteItems.length})</Link></li>
                             
                             {/* <li className="has-submenu parent-parent-menu-item">
                                 <Link to="#">Listing</Link><span className="menu-arrow"></span>

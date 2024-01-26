@@ -61,7 +61,7 @@ export default function Grid() {
 
     return (
         <>
-            <Navbar navClass="navbar-white" />
+            <Navbar />
 
             <section className="relative table w-full py-32 lg:py-36 bg-[url('../../assets/images/bg/07.png')] bg-no-repeat bg-center bg-cover">
                 <div className="absolute inset-0 bg-black opacity-80"></div>
@@ -90,7 +90,7 @@ export default function Grid() {
                     <section className="relative lg:py-24 py-16">
                         <div className="container">
                             
-                            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-4">
+                            <div className="grid gap-y-6 md:grid-cols-3 grid-cols-1 md:gap-4">
                                 {res?.data && res?.data.map((item, index) => (
                                     <CardProperty key={index} property={item} />
                                 ))}

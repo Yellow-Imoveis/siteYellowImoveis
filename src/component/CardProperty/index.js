@@ -28,7 +28,7 @@ export default function CardProperty({ property }) {
     return (
         <>
             <Link to={`/imovel/${property.slug}`}>
-                <div className="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 h-[730px] overflow-x-hidden ease-in-out duration-500">
+                <div className="group rounded-xl bg-white border border-gray-400 dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 h-[730px] overflow-x-hidden ease-in-out duration-500">
                     <div className="relative">
                         {property.crm_images && property.crm_images.length > 0 && (
                             <div style={{ overflow: 'hidden' }}>
@@ -56,16 +56,16 @@ export default function CardProperty({ property }) {
 
                     <div className="p-6">
                         <div className="pb-2">
-                            <span className="hover:text-green-600 font-light text-sm ease-in-out duration-500"
+                            <span className="hover:text-yellow-500 font-light text-sm ease-in-out duration-500"
                             >Cód.: {property.code}</span>
                         </div>
 
                         <div className="pb-6">
-                            <span className="text-lg hover:text-green-600 font-medium ease-in-out duration-500">{property.title}</span>
+                            <span className="text-lg hover:text-yellow-500 font-medium ease-in-out duration-500">{property.title}</span>
                         </div>
                         
                         <div className="pb-2">
-                            <span className="hover:text-green-600 font-light text-sm ease-in-out duration-500">
+                            <span className="hover:text-yellow-500 font-light text-sm ease-in-out duration-500">
                                 {property.city.name}
                                 {property.neighborhood && (
                                     <span>&nbsp;- {property.neighborhood.name}</span>
@@ -77,7 +77,7 @@ export default function CardProperty({ property }) {
                             
                             {property.total_area > 0 && (
                                 <div className="flex items-center text-xs me-2">
-                                    <i className="uil uil-compress-arrows text-2xl me-1 text-green-600"></i>
+                                    <i className="uil uil-compress-arrows text-2xl me-1 text-yellow-500"></i>
                                     <span>{Intl.NumberFormat('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2}).format(property.total_area)} m<sup>2</sup></span>
                                 </div>
                             )}
@@ -85,7 +85,7 @@ export default function CardProperty({ property }) {
                             {property.bedrooms > 0 && (
                                 <div className="tooltip" data-tip={`${property.bedrooms} quartos`}>
                                     <div className="flex items-center text-xs me-2">
-                                        <i className="uil uil-bed-double text-2xl me-1 text-green-600"></i>
+                                        <i className="uil uil-bed-double text-2xl me-1 text-yellow-500"></i>
                                         <span>{property.bedrooms}</span>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@ export default function CardProperty({ property }) {
                             {property.bathrooms > 0 && (
                                 <div className="tooltip" data-tip={`${property.bathrooms} banheiros`}>
                                     <div className="flex items-center text-xs me-2">
-                                        <i className="uil uil-bath text-2xl me-1 text-green-600"></i>
+                                        <i className="uil uil-bath text-2xl me-1 text-yellow-500"></i>
                                         <span>{property.bathrooms}</span>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ export default function CardProperty({ property }) {
                             {property.garages > 0 && (
                                 <div className="tooltip tooltip-left" data-tip={`${property.garages} vagas de garagem`}>
                                     <div className="flex items-center text-xs me-2">
-                                        <i className="uil uil-car-sideview text-2xl me-1 text-green-600"></i>
+                                        <i className="uil uil-car-sideview text-2xl me-1 text-yellow-500"></i>
                                         <span>{property.garages}</span>
                                     </div>
                                 </div>

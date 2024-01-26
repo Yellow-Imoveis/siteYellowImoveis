@@ -16,7 +16,7 @@ export default function Index() {
         <>
             <Navbar />
             {/* Hero Start  */}
-            <section className="relative mt-20">
+            <section className="relative mt-24">
                 <div className="container-fluid md:mx-4 mx-2">
                     <div style={{ backgroundImage: `url(${BackgroundImage})` }} className="relative pt-40 pb-52 table w-full rounded-2xl shadow-md overflow-hidden bg-[url('../../assets/images/bg/07.png')] bg-no-repeat bg-center bg-cover" id="home">
                         <div className="absolute inset-0 bg-black/30"></div>

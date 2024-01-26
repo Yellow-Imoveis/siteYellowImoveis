@@ -21,7 +21,7 @@ export default function Aboutus() {
     
     return (
         <>
-            <Navbar navClass="navbar-white" />
+            <Navbar />
             {/* <!-- Start Hero --> */}
             <section
                 style={{ backgroundImage: `url(${BackgroudImage})` }}
