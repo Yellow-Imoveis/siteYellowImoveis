@@ -305,8 +305,8 @@ function PropertyDetail(props) {
                       Compartilhe:
                     </h3>
 
-                    <div className="mt-2 flex justify-center items-center space-x-4">
-                      <Link2
+                    <div className="mt-2 flex flex-wrap justify-center items-center gap-4">
+                      {/* <Link2
                         to="#"
                         className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
                       >
@@ -317,14 +317,22 @@ function PropertyDetail(props) {
                         className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
                       >
                         <i className="uil uil-instagram align-middle"></i>
-                      </Link2>
+                      </Link2> */}
                       <a
-                        href={`https://wa.me/5511996800593`}
+                        href={`https://api.whatsapp.com/send?text=${window.location.href}`}
                         rel="noreferrer"
                         target="_blank"
                         className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
                       >
                         <i className="uil uil-whatsapp align-middle"></i>
+                      </a>
+                      <a
+                        href={`https://twitter.com/messages/compose?text=${window.location.href}`}
+                        rel="noreferrer"
+                        target="_blank"
+                        className="twitter-dm-button btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                      >
+                        <i className="uil uil-twitter align-middle"></i>
                       </a>
                     </div>
                   </div>
