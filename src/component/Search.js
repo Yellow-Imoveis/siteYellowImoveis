@@ -36,7 +36,7 @@ export default function Search() {
                                     <label className="form-label text-slate-900 dark:text-white font-medium">Buscar por : <span className="text-red-600">*</span></label>
                                     <div className="filter-search-form relative filter-border mt-2">
                                         <i className="uil uil-search icons"></i>
-                                        <input name="name" type="text" id="job-keyword" className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Busca por palavras chaves" />
+                                        <input name="name" type="text" id="job-keyword" className="form-input filter-input-box ps-4 pe-4 sm:ps-2 sm:pe-11 lg:ps-4 lg:pe-4 xl:ps-2 xl:pe-11 bg-gray-50 dark:bg-slate-800 border-0" placeholder="Busca por palavras chaves" />
                                     </div>
                                 </div>
 
