@@ -34,14 +34,14 @@ function PropertyDetail(props) {
   const { id } = useParams();
   const { data: propertyData, isLoading } = usePropertyQuery({ id });
 
-  /**
+/**
    * Array of images for the lightbox and hero
    * @type {Array<{ src: string, position: number }>}
    */
   const crmImageList = useMemo(() => {
     if (!propertyData) return [];
 
-    /**
+/**
      * @type {Array<{ src: string, position: number }>}
      */
     const images = propertyData.crm_images.map((el) => ({
@@ -55,6 +55,31 @@ function PropertyDetail(props) {
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
   const [isActivePhoto, setActivePhoto] = useState(false);
   const [facebookTags, setFacebookTags] = useState([]);
+  const [isSdkLoaded, setIsSdkLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!window.FB) {
+      window.fbAsyncInit = function () {
+        window.FB.init({
+          appId: "881635217082541",
+          cookie: true,
+          xfbml: true,
+          version: "v13.0",
+        });
+        setIsSdkLoaded(true);
+      };
+
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    } else {
+      setIsSdkLoaded(true);
+    }
+  }, []);
 
   const handlePhotoClick = (index) => {
     setActivePhotoIndex(index);
@@ -87,6 +112,15 @@ function PropertyDetail(props) {
     }
   }, [propertyData]);
 
+  const compartilharNoMessenger = () => {
+    if (window.FB) {
+      window.FB.ui({
+        method: 'share',
+        href: 'https://www.yellowimoveis.com.br/',
+      });
+    }
+  };
+
   return (
     <>
       {facebookTags && facebookTags.length > 0 && (
@@ -95,21 +129,21 @@ function PropertyDetail(props) {
 
       <Navbar />
 
-      {/* hero */}
+{/* hero */}
       <section className="relative md:pb-24 pb-16 mt-20">
         <PropertyDetailHero
           images={crmImageList}
           onClick={(index) => handlePhotoClick(index)}
         />
 
-        {/* loading message */}
+{/* loading message */}
         {isLoading && (
           <div className="flex h-full w-full justify-center items-center">
             Carregando...
           </div>
         )}
 
-        {/* main content  */}
+{/* main content  */}
         {propertyData && !isLoading && (
           <div className="container md:mt-24 mt-16">
             <div className="md:flex">
@@ -120,19 +154,6 @@ function PropertyDetail(props) {
                     Código: {propertyData?.code}
                   </span>
                 </div>
-
-                {/* <div className="pb-2">
-                                    <span 
-                                        className="font-light text-sm ease-in-out duration-500"
-                                    >
-                                        {data?.city && (
-                                            <span>{data?.city.name}</span>
-                                        )}
-                                        {data?.neighborhood && (
-                                            <span>&nbsp;- {data?.neighborhood.name}</span>
-                                        )}
-                                    </span>
-                                </div> */}
 
                 <ul className="py-6 flex flex-wrap items-center list-none">
                   <li className="flex items-center lg:me-6 me-4">
@@ -170,10 +191,6 @@ function PropertyDetail(props) {
                     __html: propertyData?.description,
                   }}
                 ></div>
-
-                {/* <div className="w-full leading-[0] border-0 mt-6">
-                                    <iframe title="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" style={{ border: "0" }} className="w-full h-[500px]" allowFullScreen></iframe>
-                                </div> */}
               </div>
 
               <div className="lg:w-1/3 md:w-1/2 md:p-4 px-3 mt-8 md:mt-0">
@@ -231,23 +248,6 @@ function PropertyDetail(props) {
                                                 </li>
                                             </ul> */}
                     </div>
-
-                    {/* <button type="button" onclick={`modalInteresse.show()`} className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-md w-full">
-                                            Tenho interesse
-                                        </button> */}
-                    <dialog id="modalInteresse" class="modal">
-                      <div class="modal-box">
-                        <form method="dialog">
-                          <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                            ✕
-                          </button>
-                        </form>
-                        <h3 class="font-bold text-lg">Hello!</h3>
-                        <p class="py-4">
-                          Press ESC key or click on ✕ button to close
-                        </p>
-                      </div>
-                    </dialog>
                   </div>
 
                   <div className="mt-12 text-center">
@@ -306,18 +306,12 @@ function PropertyDetail(props) {
                     </h3>
 
                     <div className="mt-2 flex flex-wrap justify-center items-center gap-4">
-                      {/* <Link2
-                        to="#"
+                      <button
+                        onClick={compartilharNoMessenger}
                         className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
                       >
                         <i className="uil uil-facebook align-middle"></i>
-                      </Link2>
-                      <Link2
-                        to="#"
-                        className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
-                      >
-                        <i className="uil uil-instagram align-middle"></i>
-                      </Link2> */}
+                      </button>
                       <a
                         href={`https://api.whatsapp.com/send?text=${window.location.href}`}
                         rel="noreferrer"
@@ -343,7 +337,7 @@ function PropertyDetail(props) {
         )}
       </section>
 
-      {/* images slide show */}
+{/* images slide show */}
       {crmImageList && (
         <Lightbox
           open={isActivePhoto}
@@ -354,7 +348,7 @@ function PropertyDetail(props) {
         />
       )}
 
-      {/* site footer  */}
+{/* site footer  */}
       <Footer />
 
       {/* arrow for scroll to top */}
