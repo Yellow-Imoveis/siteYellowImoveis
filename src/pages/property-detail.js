@@ -116,7 +116,7 @@ function PropertyDetail(props) {
     if (window.FB) {
       window.FB.ui({
         method: 'share',
-        href: 'window.location.href',
+        href: window.location.href,
       });
     }
   };
