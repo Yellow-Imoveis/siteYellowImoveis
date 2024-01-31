@@ -61,7 +61,7 @@ function PropertyDetail(props) {
     if (!window.FB) {
       window.fbAsyncInit = function () {
         window.FB.init({
-          appId: "881635217082541",
+          appId: "6507973162635877", 
           cookie: true,
           xfbml: true,
           version: "v13.0",
@@ -113,11 +113,12 @@ function PropertyDetail(props) {
     }
   }, [propertyData]);
 
+  const urlImovel = window.location.href
   const compartilharNoMessenger = () => {
     if (window.FB) {
       window.FB.ui({
         method: 'share',
-        href: window.location.href,
+        href: urlImovel,
       });
     }
   };
