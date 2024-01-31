@@ -247,14 +247,14 @@ const SearchForm = ({ option, handleSubmitForm }) => {
               <div>
                 <label className="form-label text-slate-900 dark:text-white font-medium">Quartos :</label>
                 <div className="filter-search-form relative filter-border mt-2">
-                  <i className="uil uil-bed-double icons"></i>
+                  <i className="sm:block lg:hidden xl:block uil uil-bed-double icons"></i>
                   <Controller
                     control={control}
                     name='bedrooms'
                     rules={{ required: false }}
                     render={({ field }) => (
                       <Select 
-                        className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                        className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                         options={aBedrooms}
                         placeholder="Número de quartos" 
                         {...field} 
@@ -269,14 +269,14 @@ const SearchForm = ({ option, handleSubmitForm }) => {
               <div>
                 <label className="form-label text-slate-900 dark:text-white font-medium">Suítes :</label>
                 <div className="filter-search-form relative filter-border mt-2">
-                  <i className="uil uil-bed icons"></i>
+                  <i className="sm:block lg:hidden xl:block uil uil-bed icons"></i>
                   <Controller
                     control={control}
                     name='suites'
                     rules={{ required: false }}
                     render={({ field }) => (
                       <Select 
-                        className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                        className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                         options={aSuites}
                         placeholder="Número de suítes" 
                         {...field} 
@@ -291,14 +291,14 @@ const SearchForm = ({ option, handleSubmitForm }) => {
               <div>
                 <label className="form-label text-slate-900 dark:text-white font-medium">Vagas de garagem :</label>
                 <div className="filter-search-form relative filter-border mt-2">
-                  <i className="uil uil-parking-circle icons"></i>
+                  <i className="sm:block lg:hidden xl:block uil uil-parking-circle icons"></i>
                   <Controller
                     control={control}
                     name='garage'
                     rules={{ required: false }}
                     render={({ field }) => (
                       <Select 
-                        className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                        className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                         options={aGarages}
                         placeholder="Número de vagas" 
                         {...field} 
@@ -313,14 +313,14 @@ const SearchForm = ({ option, handleSubmitForm }) => {
               <div>
                 <label className="form-label text-slate-900 dark:text-white font-medium">Banheiros :</label>
                 <div className="filter-search-form relative filter-border mt-2">
-                  <i className="uil uil-bath icons"></i>
+                  <i className="sm:block lg:hidden xl:block uil uil-bath icons"></i>
                   <Controller
                     control={control}
                     name='bathrooms'
                     rules={{ required: false }}
                     render={({ field }) => (
                       <Select 
-                        className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                        className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                         options={aBathrooms}
                         placeholder="Banheiros" 
                         {...field} 
@@ -335,14 +335,14 @@ const SearchForm = ({ option, handleSubmitForm }) => {
               <div className="z-0">
                 <label className="form-label text-slate-900 dark:text-white font-medium">Área total :</label>
                 <div className="filter-search-form relative filter-border mt-2">
-                  <i className="uil uil-arrows-resize-h icons"></i>
+                  <i className="sm:block lg:hidden xl:block uil uil-arrows-resize-h icons"></i>
                   <Controller
                     control={control}
                     name='area'
                     rules={{ required: false }}
                     render={({ field }) => (
                       <Select 
-                        className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                        className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                         options={areaOptions}
                         placeholder="Área total" 
                         {...field} 
