@@ -128,15 +128,15 @@ const SearchForm = ({ option, handleSubmitForm }) => {
             <div>
                 <label className="form-label text-slate-900 dark:text-white font-medium">Buscar por : <span className="text-red-600">*</span></label>
                 <div className="filter-search-form relative filter-border mt-2">
-                    <i className="uil uil-search icons"></i>
-                    <input name="name" autoComplete="off" type="text" id="job-keyword" className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Palavras chaves / Código" {...register('keyword')} />
+                    <i className="sm:block lg:hidden xl:block uil uil-search icons"></i>
+                    <input name="name" autoComplete="off" type="text" id="job-keyword" className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-2 lg:pe-2 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" placeholder="Palavras chaves / Código" {...register('keyword')} />
                 </div>
             </div>
 
             <div>
               <label className="form-label text-slate-900 dark:text-white font-medium">Local :</label>
               <div className="filter-search-form relative filter-border mt-2">
-                <i className="uil uil-map-marker icons"></i>
+                <i className="sm:block lg:hidden xl:block uil uil-map-marker icons"></i>
                 <Controller
                   control={control}
                   name='local'
@@ -144,7 +144,7 @@ const SearchForm = ({ option, handleSubmitForm }) => {
                   render={({ field }) => (
                     <AsyncSelect
                       placeholder="Local do imóvel" 
-                      className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                      className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                       options={[]} 
                       isLoading={false}
                       noOptionsMessage={() => 'Escolha o local do imóvel'}
@@ -166,7 +166,7 @@ const SearchForm = ({ option, handleSubmitForm }) => {
             <div>
               <label htmlFor="buy-properties" className="form-label text-slate-900 dark:text-white font-medium">Categorias:</label>   
               <div className="filter-search-form relative filter-border mt-2">
-                <i className="uil uil-estate icons"></i>
+                <i className="sm:block lg:hidden xl:block uil uil-estate icons"></i>
                 <Controller
                   control={control}
                   name='category_id'
@@ -174,7 +174,7 @@ const SearchForm = ({ option, handleSubmitForm }) => {
                   render={({ field }) => (
                       <Select 
                           placeholder="Escolha a categoria" 
-                          className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                          className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                           options={categories} 
                           isLoading={isLoading} 
                           loadingMessage={() => 'Carregando categorias...'} 
@@ -200,14 +200,14 @@ const SearchForm = ({ option, handleSubmitForm }) => {
             <div>
               <label htmlFor="buy-min-price" className="form-label text-slate-900 dark:text-white font-medium">Preço mínimo :</label>                                                        
               <div className="filter-search-form relative filter-border mt-2">
-                <i className="uil uil-usd-circle icons"></i>
+                <i className="sm:block lg:hidden xl:block uil uil-usd-circle icons"></i>
                 <Controller
                   control={control}
                   name='min_price'
                   rules={{ required: false }}
                   render={({ field }) => (
                     <Select 
-                      className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                      className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                       options={option === 'alugar' ? aPricesToRent : aPricesToSell}
                       placeholder="Valor mínimo" 
                       {...field} 
@@ -222,14 +222,14 @@ const SearchForm = ({ option, handleSubmitForm }) => {
             <div>
               <label htmlFor="buy-max-price" className="form-label text-slate-900 dark:text-white font-medium">Preço máximo :</label>                                                        
               <div className="filter-search-form relative mt-2">
-                <i className="uil uil-usd-circle icons"></i>
+                <i className="sm:block lg:hidden xl:block uil uil-usd-circle icons"></i>
                 <Controller
                   control={control}
                   name='max_price'
                   rules={{ required: false }}
                   render={({ field }) => (
                     <Select 
-                      className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" 
+                      className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
                       options={option === 'alugar' ? aPricesToRent : aPricesToSell}
                       placeholder="Valor máximo" 
                       {...field} 
