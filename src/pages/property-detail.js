@@ -134,22 +134,22 @@ function PropertyDetail(props) {
                                     </span>
                                 </div> */}
 
-                <ul className="py-6 flex flex-wrap items-center list-none">
-                  <li className="flex items-center lg:me-6 me-4">
+                <ul className="px-4 py-6 flex flex-wrap items-center place-content-around list-none border rounded-lg border-gray-300 mb-4">
+                  <li className="flex items-center lg:me-6 me-4 mb-2 sm:mb-0">
                     <i className="uil uil-compress-arrows lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
                       {propertyData?.total_area} m<sup>2</sup>
                     </span>
                   </li>
 
-                  <li className="flex items-center lg:me-6 me-4">
+                  <li className="flex items-center lg:me-6 me-4 mb-2 sm:mb-0">
                     <i className="uil uil-bed-double lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
                       {propertyData?.bedrooms} quartos
                     </span>
                   </li>
 
-                  <li className="flex items-center lg:me-6 me-4">
+                  <li className="flex items-center lg:me-6 me-4 mb-2 sm:mb-0">
                     <i className="uil uil-bath lg:text-3xl text-2xl me-2 text-green-600"></i>
                     <span className="lg:text-xl">
                       {propertyData?.bathrooms} banheiros
