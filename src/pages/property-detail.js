@@ -61,7 +61,7 @@ function PropertyDetail(props) {
     if (!window.FB) {
       window.fbAsyncInit = function () {
         window.FB.init({
-          appId: "6507973162635877", 
+          appId: "1033823097706771", 
           cookie: true,
           xfbml: true,
           version: "v13.0",
