@@ -116,7 +116,7 @@ function PropertyDetail(props) {
     if (window.FB) {
       window.FB.ui({
         method: 'share',
-        href: 'https://www.yellowimoveis.com.br/',
+        href: 'window.location.href',
       });
     }
   };
