@@ -5,6 +5,7 @@ export async function getProperties(params) {
 
     try {
         const response = await http.get(`/properties?${params}`);
+        response.data.data = response.data.data.filter((property) => property.active === 1);
         console.log("Response", response.data);
         return response.data;
     } catch (e) {
