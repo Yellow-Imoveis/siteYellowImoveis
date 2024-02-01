@@ -16,8 +16,6 @@ import { Image } from './PropertyDetailHero.image';
 function Root({ images, onClick }) {
   if (images.length === 0) return null;
   
-  images = images.slice(0, 3);
-  
   if (images.length === 1) {
     return (
       <div className="flex justify-center">
