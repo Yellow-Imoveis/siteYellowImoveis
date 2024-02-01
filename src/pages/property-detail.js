@@ -44,6 +44,7 @@ function PropertyDetail(props) {
 /**
      * @type {Array<{ src: string, position: number }>}
      */
+    propertyData.crm_images = propertyData.crm_images.filter((image) => image.active === 1);
     const images = propertyData.crm_images.map((el) => ({
       src: el.image,
       position: el.position,
