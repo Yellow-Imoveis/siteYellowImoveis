@@ -16,7 +16,6 @@ function calcItemsSpace(length, target) {
  */
 function createCarouselSettings(images) {
   return {
-    nav: false, // show navigation dots
     loop: false, // disable loop
     mouseDrag: true, // enable drag image to move around
     items: 1, // show 1 image at a time by default
