@@ -6,7 +6,7 @@
  */
 function calcItemsSpace(length, target) {
   if (length >= target) return target;    
-  return length + 1;
+  return length;
 };
 
 /**
@@ -24,10 +24,10 @@ function createCarouselSettings(images) {
     controls: false, // hide control buttons (prev/next)
     responsive: {
       768: {
-        items: calcItemsSpace(images.length, 2)
+        items: calcItemsSpace(images.length, 2.2)
       },
-      1200: {
-        items: calcItemsSpace(images.length, 3),
+      1400: {
+        items: calcItemsSpace(images.length, 3.4),
 
       },
     }
