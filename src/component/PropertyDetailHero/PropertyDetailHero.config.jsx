@@ -21,13 +21,13 @@ function createCarouselSettings(images) {
     items: 1, // show 1 image at a time by default
     gutter: 10, // space between images
     controls: false, // hide control buttons (prev/next)
+    navPosition: "bottom",
     responsive: {
       768: {
         items: calcItemsSpace(images.length, 2.2)
       },
       1400: {
         items: calcItemsSpace(images.length, 3.4),
-
       },
     }
   };
