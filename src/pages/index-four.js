@@ -32,7 +32,7 @@ export default function IndexFour() {
                     <div className="grid md:grid-cols-2 gap-[30px] mt-10 items-center">
                         <div className="ltr:md:text-left rtl:md:text-right text-center">
                             <h1 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Find Your <span className="text-green-600">Perfect <br /> & Wonderful</span> Home</h1>
-                            <p className="text-slate-400 text-xl max-w-xl">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                            <p className="text-slate-700 text-xl max-w-xl">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
 
                             <div className="relative mt-8">
                                 <div className="grid grid-cols-1">
@@ -112,7 +112,7 @@ export default function IndexFour() {
                     <div className="grid grid-cols-1 text-center">
                         <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Have Question ? Get in touch!</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                        <p className="text-slate-700 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
 
                         <div className="mt-6">
                             <Link2 to="/contact" className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-md"><i className="uil uil-phone align-middle me-2"></i> Contact us</Link2>

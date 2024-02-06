@@ -163,7 +163,7 @@ export default function Signup() {
                                     <div className="mb-4">
                                         <div className="flex items-center w-full mb-0">
                                             <input className="form-checkbox text-green-600 rounded w-4 h-4 me-2 border border-inherit" type="checkbox" value="" id="AcceptT&C" />
-                                            <label className="form-check-label text-slate-400" htmlFor="AcceptT&C">I Accept <Link2 to="#" className="text-green-600">Terms And Condition</Link2></label>
+                                            <label className="form-check-label text-slate-700" htmlFor="AcceptT&C">I Accept <Link2 to="#" className="text-green-600">Terms And Condition</Link2></label>
                                         </div>
                                     </div>
 
@@ -172,7 +172,7 @@ export default function Signup() {
                                     </div>
 
                                     <div className="text-center">
-                                        <span className="text-slate-400 me-2">Already have an account ? </span> <Link2 to="/auth-login" className="text-black dark:text-white font-bold">Sign in</Link2>
+                                        <span className="text-slate-700 me-2">Already have an account ? </span> <Link2 to="/auth-login" className="text-black dark:text-white font-bold">Sign in</Link2>
                                     </div>
                                 </div>
                             </form>

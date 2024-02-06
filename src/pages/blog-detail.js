@@ -48,9 +48,9 @@ export default function BlogDetail() {
                                 <img src={Image} alt="" />
 
                                 <div className="p-6">
-                                    <p className="text-slate-400">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script.</p>
-                                    <p className="text-slate-400 italic border-x-4 border-green-600 rounded-ss-xl rounded-ee-xl mt-3 p-3">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "</p>
-                                    <p className="text-slate-400 mt-3">The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                                    <p className="text-slate-700">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script.</p>
+                                    <p className="text-slate-700 italic border-x-4 border-green-600 rounded-ss-xl rounded-ee-xl mt-3 p-3">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                                    <p className="text-slate-700 mt-3">The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
                                 </div>
                             </div>
 
@@ -114,7 +114,7 @@ export default function BlogDetail() {
 
                                     <div className="ms-3">
                                         <Link2 to="#" className="font-medium hover:text-green-600">10 Things You About Real Estate</Link2>
-                                        <p className="text-sm text-slate-400">2nd March 2023</p>
+                                        <p className="text-sm text-slate-700">2nd March 2023</p>
                                     </div>
                                 </div>
 
@@ -123,7 +123,7 @@ export default function BlogDetail() {
 
                                     <div className="ms-3">
                                         <Link2 to="#" className="font-medium hover:text-green-600">Why We Love Real Estate</Link2>
-                                        <p className="text-sm text-slate-400">2nd March 2023</p>
+                                        <p className="text-sm text-slate-700">2nd March 2023</p>
                                     </div>
                                 </div>
 
@@ -132,20 +132,20 @@ export default function BlogDetail() {
 
                                     <div className="ms-3">
                                         <Link2 to="#" className="font-medium hover:text-green-600">110 Quick Tips About Real Estate</Link2>
-                                        <p className="text-sm text-slate-400">2nd March 2023</p>
+                                        <p className="text-sm text-slate-700">2nd March 2023</p>
                                     </div>
                                 </div>
 
                                 <h5 className="font-medium text-lg mt-[30px]">Social sites</h5>
                                 <ul className="list-none mt-4">
 
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Facebook className="h-4 w-4"></Facebook></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Instagram className="h-4 w-4"></Instagram></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Twitter className="h-4 w-4"></Twitter></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Linkedin className="h-4 w-4"></Linkedin></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><GitHub className="h-4 w-4"></GitHub></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Youtube className="h-4 w-4"></Youtube></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Gitlab className="h-4 w-4"></Gitlab></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Facebook className="h-4 w-4"></Facebook></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Instagram className="h-4 w-4"></Instagram></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Twitter className="h-4 w-4"></Twitter></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Linkedin className="h-4 w-4"></Linkedin></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><GitHub className="h-4 w-4"></GitHub></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Youtube className="h-4 w-4"></Youtube></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Gitlab className="h-4 w-4"></Gitlab></Link2></li>
                                 </ul>
                             </div>
                         </div>

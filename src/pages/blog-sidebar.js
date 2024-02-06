@@ -96,8 +96,8 @@ export default function BlogSidebar() {
                                         <div className="relative p-6">
                                             <div className="">
                                                 <div className="flex justify-between mb-4">
-                                                    <span className="text-slate-400 text-sm"><i className="uil uil-calendar-alt text-slate-900 dark:text-white me-2"></i>{item.date}</span>
-                                                    <span className="text-slate-400 text-sm ms-3"><i className="uil uil-clock text-slate-900 dark:text-white me-2"></i>5 min read</span>
+                                                    <span className="text-slate-700 text-sm"><i className="uil uil-calendar-alt text-slate-900 dark:text-white me-2"></i>{item.date}</span>
+                                                    <span className="text-slate-700 text-sm ms-3"><i className="uil uil-clock text-slate-900 dark:text-white me-2"></i>5 min read</span>
                                                 </div>
 
                                                 <Link2 to="/blog-detail" className="title text-xl font-medium hover:text-green-600 duration-500 ease-in-out">{item.title}</Link2>
@@ -130,7 +130,7 @@ export default function BlogSidebar() {
 
                                     <div className="ms-3">
                                         <Link2 to="#" className="font-medium hover:text-green-600">10 Things You About Real Estate</Link2>
-                                        <p className="text-sm text-slate-400">2nd March 2023</p>
+                                        <p className="text-sm text-slate-700">2nd March 2023</p>
                                     </div>
                                 </div>
 
@@ -139,7 +139,7 @@ export default function BlogSidebar() {
 
                                     <div className="ms-3">
                                         <Link2 to="#" className="font-medium hover:text-green-600">Why We Love Real Estate</Link2>
-                                        <p className="text-sm text-slate-400">2nd March 2023</p>
+                                        <p className="text-sm text-slate-700">2nd March 2023</p>
                                     </div>
                                 </div>
 
@@ -148,19 +148,19 @@ export default function BlogSidebar() {
 
                                     <div className="ms-3">
                                         <Link2 to="#" className="font-medium hover:text-green-600">110 Quick Tips About Real Estate</Link2>
-                                        <p className="text-sm text-slate-400">2nd March 2023</p>
+                                        <p className="text-sm text-slate-700">2nd March 2023</p>
                                     </div>
                                 </div>
 
                                 <h5 className="font-medium text-lg mt-[30px]">Social sites</h5>
                                 <ul className="list-none mt-4">
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Facebook className="h-4 w-4" /> </Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Instagram className="h-4 w-4" /> </Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Twitter className="h-4 w-4" /></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Linkedin className="h-4 w-4" /></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><GitHub className="h-4 w-4" /> </Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Youtube className="h-4 w-4" /></Link2></li>
-                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-400 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Gitlab className="h-4 w-4" /></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Facebook className="h-4 w-4" /> </Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Instagram className="h-4 w-4" /> </Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Twitter className="h-4 w-4" /></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Linkedin className="h-4 w-4" /></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><GitHub className="h-4 w-4" /> </Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Youtube className="h-4 w-4" /></Link2></li>
+                                    <li className="inline ms-1"><Link2 to="#" className="btn btn-icon btn-sm border border-gray-100 dark:border-gray-800 rounded-md text-slate-700 hover:border-green-600 hover:text-white hover:bg-yellow-500"><Gitlab className="h-4 w-4" /></Link2></li>
                                 </ul>
                             </div>
                         </div>

@@ -59,7 +59,7 @@ export default function Index() {
                     <div className="grid grid-cols-1 text-center">
                         <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Tem dúvidas ? Fale conosco!</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">
+                        <p className="text-slate-700 max-w-xl mx-auto">
                             Converse com nossa equipe de atendimento e tire todas as suas dúvidas.
                         </p>
 

@@ -61,7 +61,7 @@ export default function BuyTab() {
                                     <img src={Agent} alt="" />
                                     <div className="mt-6">
                                         <h5 className="font-medium text-xl">Pre Approval Letter</h5>
-                                        <p className="text-slate-400 mt-3">Most buyers think the first step is finding their dream house, but the truth is finding the funding is the first step. Hously streamlines the Loan Pre-Approval process with our ecosystem of Premier Partners or simply upload your own Pre-Approval letter.</p>
+                                        <p className="text-slate-700 mt-3">Most buyers think the first step is finding their dream house, but the truth is finding the funding is the first step. Hously streamlines the Loan Pre-Approval process with our ecosystem of Premier Partners or simply upload your own Pre-Approval letter.</p>
                                     </div>
                                 </div>
                             )}
@@ -70,7 +70,7 @@ export default function BuyTab() {
                                     <img src={Presentation} alt="" />
                                     <div className="mt-6">
                                         <h5 className="font-medium text-xl">Schedule a Showing</h5>
-                                        <p className="text-slate-400 mt-3">Hously allows a buyer to schedule an instant showing and gain a private viewing without the need for multiple parties to be involved. You pick the time that works for you!</p>
+                                        <p className="text-slate-700 mt-3">Hously allows a buyer to schedule an instant showing and gain a private viewing without the need for multiple parties to be involved. You pick the time that works for you!</p>
                                     </div>
                                 </div>
                             )}
@@ -79,7 +79,7 @@ export default function BuyTab() {
                                     <img src={Session} alt="" />
                                     <div className="mt-6">
                                         <h5 className="font-medium text-xl">Submit an Offer</h5>
-                                        <p className="text-slate-400 mt-3">Hously walks a buyer through the purchase agreement process making the paperwork appear effortless. With our custom workflows and progress analytics, you will always know where your purchase stands. No more phone tag and unreturned emails!</p>
+                                        <p className="text-slate-700 mt-3">Hously walks a buyer through the purchase agreement process making the paperwork appear effortless. With our custom workflows and progress analytics, you will always know where your purchase stands. No more phone tag and unreturned emails!</p>
                                     </div>
                                 </div>
                             )}
@@ -88,7 +88,7 @@ export default function BuyTab() {
                                     <img src={Startup} alt="" />
                                     <div className="mt-6">
                                         <h5 className="font-medium text-xl">Property Inspection</h5>
-                                        <p className="text-slate-400 mt-3">No one wants to buy a lemon. Book an inspection with a licensed inspector, then submit the repair requests all via the Hously platform.</p>
+                                        <p className="text-slate-700 mt-3">No one wants to buy a lemon. Book an inspection with a licensed inspector, then submit the repair requests all via the Hously platform.</p>
                                     </div>
                                 </div>
                             )}
@@ -97,7 +97,7 @@ export default function BuyTab() {
                                     <img src={Team} alt="" />
                                     <div className="mt-6">
                                         <h5 className="font-medium text-xl">Appraisal</h5>
-                                        <p className="text-slate-400 mt-3">Hously monitors the appraisal process ensuring the home you are purchasing meets or exceeds the price you are paying.</p>
+                                        <p className="text-slate-700 mt-3">Hously monitors the appraisal process ensuring the home you are purchasing meets or exceeds the price you are paying.</p>
                                     </div>
                                 </div>
                             )}
@@ -106,7 +106,7 @@ export default function BuyTab() {
                                     <img src={Meeting} alt="" />
                                     <div className="mt-6">
                                         <h5 className="font-medium text-xl">Closing Deal</h5>
-                                        <p className="text-slate-400 mt-3">Finally the closing packet is sent to the Title office, and the day has come… You have Hously the home of your dreams!</p>
+                                        <p className="text-slate-700 mt-3">Finally the closing packet is sent to the Title office, and the day has come… You have Hously the home of your dreams!</p>
                                     </div>
                                 </div>
                             )}
