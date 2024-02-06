@@ -228,7 +228,7 @@ function PropertyDetail(props) {
                               }).format(propertyData?.price_to_rent)}
                             </span>
 
-                            <span className="bg-yellow-500/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
+                            <span  className="btn bg-yellow-500  border-yellow-500 dark:border-yellow-500 text-white rounded-md">
                               Para locação
                             </span>
                           </div>
@@ -261,7 +261,7 @@ function PropertyDetail(props) {
                     <div className="mt-2">
                       <Link2
                         to="/fale-conosco"
-                        className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-phone align-middle me-2"></i> Fale
                         conosco
@@ -279,7 +279,7 @@ function PropertyDetail(props) {
                         <div className="mt-2">
                           <button
                             onClick={openSimulation}
-                            className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                            className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                           >
                             Simular financiamento
                           </button>
@@ -311,7 +311,7 @@ function PropertyDetail(props) {
                     <div className="mt-2 flex flex-wrap justify-center items-center gap-4">
                       <button
                         onClick={compartilharNoMessenger}
-                        className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-facebook align-middle"></i>
                       </button>
@@ -319,7 +319,7 @@ function PropertyDetail(props) {
                         href={`https://api.whatsapp.com/send?text=${window.location.href}`}
                         rel="noreferrer"
                         target="_blank"
-                        className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-whatsapp align-middle"></i>
                       </a>
@@ -327,7 +327,7 @@ function PropertyDetail(props) {
                         href={`https://twitter.com/messages/compose?text=${window.location.href}`}
                         rel="noreferrer"
                         target="_blank"
-                        className="twitter-dm-button btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-twitter align-middle"></i>
                       </a>
