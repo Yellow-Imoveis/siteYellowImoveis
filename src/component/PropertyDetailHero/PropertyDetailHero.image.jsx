@@ -17,20 +17,19 @@ function Image({ src, index, containerClassName, onClick }) {
   return (
     <div
       className={tw("group relative", containerClassName)}
-      onClick={onClick}
     >
       <img
         src={src}
-        className={"object-cover w-full h-full"}
+        className={"object-cover w-full h-full group-hover:brightness-50 duration-500 ease-in-out"}
         alt={`property ${index && index + 1}`}
       />
 
-      {/* hover effect */}
-      <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
-
       {/* centered overlay */}
       <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 invisible group-hover:visible">
-        <button className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox">
+        <button 
+          className="btn btn-icon bg-yellow-500 hover:bg-yellow-600 text-white rounded-full lightbox" 
+          onClick={onClick}
+        >
           <i className="uil uil-camera"></i>
         </button>
       </div>
