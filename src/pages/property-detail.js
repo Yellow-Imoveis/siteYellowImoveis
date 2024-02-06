@@ -158,7 +158,7 @@ function PropertyDetail(props) {
                   </span>
                 </div>
 
-                <ul className="py-6 px-2 flex flex-wrap items-center place-content-around list-none bg-slate-100 shadow-[2px_3px_2px_rgba(0,0,0,0.24)] rounded-lg gap-y-6">
+                <ul className="py-6 px-2 flex flex-wrap items-center place-content-around list-none bg-slate-100 shadow-[2px_3px_5px_rgba(0,0,0,0.24)] mb-6 rounded-lg gap-y-6">
                   <li className="flex items-center lg:me-6 me-4">
                     <i className="uil uil-compress-arrows bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
