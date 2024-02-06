@@ -1,11 +1,21 @@
+import PropTypes from 'prop-types';
+import { twMerge as tw } from 'tailwind-merge';
+
+/**
+ * @typedef {object} ControlProps
+ * @property {string} id - id attribute
+ * @property {string?} containerClassName - container class name
+*/
+
 /**
  * Control component used to render the control buttons for the image slider
+ * @param {ControlProps} props - component props
  */
-function Control({id}) {
+function Control({id, containerClassName}) {
   return (
     <div 
       id={id} 
-      className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between pb-10 px-4 pointer-events-none"
+      className={tw("flex justify-between pointer-events-none", containerClassName)}
     >
       {/* left button  */}
       <button 
@@ -25,5 +35,10 @@ function Control({id}) {
     </div>  
   );
 }
+
+Control.propTypes = {
+  id: PropTypes.string.isRequired,
+  containerClassName: PropTypes.string,
+};
 
 export { Control };

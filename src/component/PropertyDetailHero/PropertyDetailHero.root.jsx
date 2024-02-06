@@ -44,7 +44,10 @@ function Root({ images, onClick }) {
         ))}      
       </TinySlider>
 
-      <Control id="tns-controls" />
+      <Control 
+        id="tns-controls" 
+        containerClassName="absolute top-1/2 -translate-y-1/2 left-0 right-0 pb-10 px-4"
+      />
     </div>
   );
 }
