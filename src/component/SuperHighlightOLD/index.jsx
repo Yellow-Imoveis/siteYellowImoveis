@@ -35,7 +35,7 @@ const SuperHighlight = () => {
 
           {data && (
             <>
-              <p className="text-slate-400 max-w-xl mx-auto mb-4">
+              <p className="text-slate-700 max-w-xl mx-auto mb-4">
                 {data.title}
               </p>
               <div className="rounded-lg relative">

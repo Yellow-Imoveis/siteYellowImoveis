@@ -31,7 +31,7 @@ export default function IndexFive() {
                     <div className="grid grid-cols-1">
                         <div className="text-center">
                             <h1 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">Are you ready to find your dream home</h1>
-                            <p className="text-slate-400 mx-auto text-xl max-w-xl">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                            <p className="text-slate-700 mx-auto text-xl max-w-xl">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
 
                             <div className="subcribe-form relative z-1 mt-8">
                                 <form className="relative max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ export default function IndexFive() {
                     <div className="grid grid-cols-1 pb-8">
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Listing Categories</h3>
 
-                        <p className="text-slate-400 max-w-xl">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                        <p className="text-slate-700 max-w-xl">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 mt-8 md:gap-[30px] gap-3">
@@ -66,7 +66,7 @@ export default function IndexFive() {
                             <img src={ResidentialImage} alt="" />
                             <div className="p-4">
                                 <Link2 href="#" className="text-xl font-medium hover:text-green-600">Residential</Link2>
-                                <p className="text-slate-400 text-sm mt-1">46 Listings</p>
+                                <p className="text-slate-700 text-sm mt-1">46 Listings</p>
                             </div>
                         </div>
 
@@ -74,7 +74,7 @@ export default function IndexFive() {
                             <img src={LandImage} alt="" />
                             <div className="p-4">
                                 <Link2 href="#" className="text-xl font-medium hover:text-green-600">Land</Link2>
-                                <p className="text-slate-400 text-sm mt-1">124 Listings</p>
+                                <p className="text-slate-700 text-sm mt-1">124 Listings</p>
                             </div>
                         </div>
 
@@ -82,7 +82,7 @@ export default function IndexFive() {
                             <img src={CommercialImage} alt="" />
                             <div className="p-4">
                                 <Link2 href="#" className="text-xl font-medium hover:text-green-600">Commercial</Link2>
-                                <p className="text-slate-400 text-sm mt-1">265 Listings</p>
+                                <p className="text-slate-700 text-sm mt-1">265 Listings</p>
                             </div>
                         </div>
 
@@ -90,7 +90,7 @@ export default function IndexFive() {
                             <img src={IndustrialImage} alt="" />
                             <div className="p-4">
                                 <Link2 href="#" className="text-xl font-medium hover:text-green-600">Industrial</Link2>
-                                <p className="text-slate-400 text-sm mt-1">452 Listings</p>
+                                <p className="text-slate-700 text-sm mt-1">452 Listings</p>
                             </div>
                         </div>
 
@@ -98,7 +98,7 @@ export default function IndexFive() {
                             <img src={InvestmentImage} alt="" />
                             <div className="p-4">
                                 <Link2 href="#" className="text-xl font-medium hover:text-green-600">Investment</Link2>
-                                <p className="text-slate-400 text-sm mt-1">12 Listings</p>
+                                <p className="text-slate-700 text-sm mt-1">12 Listings</p>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@ export default function IndexFive() {
                     <div className="grid grid-cols-1 text-center">
                         <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Have Question ? Get in touch!</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                        <p className="text-slate-700 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
 
                         <div className="mt-6">
                             <Link2 to="/contact" className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-md"><i className="uil uil-phone align-middle me-2"></i> Contact us</Link2>

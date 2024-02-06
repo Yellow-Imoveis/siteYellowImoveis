@@ -27,7 +27,7 @@ export default function Feature() {
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Missão, Visão e Valores</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">
+                    <p className="text-slate-700 max-w-xl mx-auto">
                         A Yellow Imóveis é a imobiliária ideal, par você comprar, vender e alugar seus imóveis sem burocracia.
                     </p>
                 </div>
@@ -53,7 +53,7 @@ export default function Feature() {
 
                             <div className="mt-6">
                                 <h5 className="text-xl font-medium">Missão</h5>
-                                <div className="text-slate-400 mt-3" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data?.missao) }}></div>
+                                <div className="text-slate-700 mt-3" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data?.missao) }}></div>
                             </div>
                         </div>
 
@@ -66,7 +66,7 @@ export default function Feature() {
                             </div>
                             <div className="mt-6">
                                 <h5 className="text-xl font-medium">Visão</h5>
-                                <div className="text-slate-400 mt-3" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data?.visao) }}></div>
+                                <div className="text-slate-700 mt-3" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data?.visao) }}></div>
                             </div>
                         </div>
 
@@ -80,7 +80,7 @@ export default function Feature() {
 
                             <div className="mt-6">
                                 <h5 className="text-xl font-medium">Valores</h5>
-                                <div className="text-slate-400 mt-3" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data?.valores) }}></div>
+                                <div className="text-slate-700 mt-3" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(data?.valores) }}></div>
                             </div>
                         </div>
 

@@ -48,7 +48,7 @@ export default function Property() {
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Imóveis em destaque</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">
+                    <p className="text-slate-700 max-w-xl mx-auto">
                         A Yellow Imóveis tem o imóvel que você procura, com o melhor preço e sem burocracia.
                     </p>
                 </div>
