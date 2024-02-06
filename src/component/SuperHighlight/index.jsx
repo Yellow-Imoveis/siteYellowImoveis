@@ -47,8 +47,10 @@ export default function About() {
     };
 
     const saibaMaisButtonStyle = {
-        padding: '10px 20px',
+        backgroundColor: '#FFFF00',
         textDecoration: 'none',
+        fontWeight: 'bold',
+        fontSize: '16px',
     };
 
     return (
