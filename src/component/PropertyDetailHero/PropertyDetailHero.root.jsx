@@ -46,7 +46,7 @@ function Root({ images, onClick }) {
 
       <Control 
         id="tns-controls" 
-        containerClassName="absolute top-1/2 -translate-y-1/2 left-0 right-0 pb-10 px-4"
+        containerClassName="absolute top-[230px] left-0 right-0 px-4"
       />
     </div>
   );
