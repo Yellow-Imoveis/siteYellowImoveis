@@ -57,7 +57,7 @@ export default function About() {
                         <div className="md:col-span-5">
                             <div className="lg:ms-4">
                                 <h4 className="mb-6 md:text-2xl text-2xl lg:leading-normal leading-normal font-semibold">{data.title}</h4>
-                                <p className="text-slate-400 max-w-xl" dangerouslySetInnerHTML={{__html: data.short_description}}></p>
+                                <p className="text-slate-700 max-w-xl" dangerouslySetInnerHTML={{__html: data.short_description}}></p>
 
                                 <div className="mt-4">
                                     <Link2 to={`/imovel/${data.id}-${data.slug}`} className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-md mt-3">Saiba mais </Link2>

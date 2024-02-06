@@ -90,8 +90,8 @@ export default function Blogs() {
                                 <div className="relative p-6">
                                     <div className="">
                                         <div className="flex justify-between mb-4">
-                                            <span className="text-slate-400 text-sm"><i className="uil uil-calendar-alt text-slate-900 dark:text-white me-2"></i>{item.date}</span>
-                                            <span className="text-slate-400 text-sm ms-3"><i className="uil uil-clock text-slate-900 dark:text-white me-2"></i>5 min read</span>
+                                            <span className="text-slate-700 text-sm"><i className="uil uil-calendar-alt text-slate-900 dark:text-white me-2"></i>{item.date}</span>
+                                            <span className="text-slate-700 text-sm ms-3"><i className="uil uil-clock text-slate-900 dark:text-white me-2"></i>5 min read</span>
                                         </div>
 
                                         <Link2 to="/blog-detail" className="title text-xl font-medium hover:text-green-600 duration-500 ease-in-out">{item.title}</Link2>

@@ -40,7 +40,7 @@ export default function PropertyTwo() {
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Featured Properties</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                    <p className="text-slate-700 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
                 </div>
 
                 <div className="grid grid-cols-1 mt-8 relative">
@@ -82,12 +82,12 @@ export default function PropertyTwo() {
 
                                             <ul className="pt-6 flex justify-between items-center list-none">
                                                 <li>
-                                                    <span className="text-slate-400">Price</span>
+                                                    <span className="text-slate-700">Price</span>
                                                     <p className="text-lg font-medium">$5000</p>
                                                 </li>
 
                                                 <li>
-                                                    <span className="text-slate-400">Rating</span>
+                                                    <span className="text-slate-700">Rating</span>
                                                     <ul className="text-lg font-medium text-amber-400 list-none">
                                                         <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
                                                         <li className="inline ms-1"><i className="mdi mdi-star"></i></li>

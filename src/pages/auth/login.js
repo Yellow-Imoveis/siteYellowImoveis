@@ -159,10 +159,10 @@ export default function Login() {
                                     <div className="flex justify-between mb-4">
                                         <div className="inline-flex items-center">
                                             <input className="form-checkbox text-green-600 rounded w-4 h-4 me-2 border border-inherit" type="checkbox" value="" id="RememberMe" />
-                                            <label className="form-check-label text-slate-400" htmlFor="RememberMe">Remember me</label>
+                                            <label className="form-check-label text-slate-700" htmlFor="RememberMe">Remember me</label>
                                         </div>
 
-                                        <p className="text-slate-400 mb-0"><Link2 to="/auth-reset-password" className="text-slate-400">Forgot password ?</Link2></p>
+                                        <p className="text-slate-700 mb-0"><Link2 to="/auth-reset-password" className="text-slate-700">Forgot password ?</Link2></p>
                                     </div>
 
                                     <div className="mb-4">
@@ -170,7 +170,7 @@ export default function Login() {
                                     </div>
 
                                     <div className="text-center">
-                                        <span className="text-slate-400 me-2">Don't have an account ?</span> <Link2 to="/auth-signup" className="text-black dark:text-white font-bold">Sign Up</Link2>
+                                        <span className="text-slate-700 me-2">Don't have an account ?</span> <Link2 to="/auth-signup" className="text-black dark:text-white font-bold">Sign Up</Link2>
                                     </div>
                                 </div>
                             </form>

@@ -145,7 +145,7 @@ export default function ResetPassword() {
                             <Link2 to="/"><img src={Icon} className="mx-auto" alt="" /></Link2>
                             <h5 className="my-6 text-xl font-semibold">Reset Your Password</h5>
                             <div className="grid grid-cols-1">
-                                <p className="text-slate-400 mb-6">Please enter your email address. You will receive a link to create a new password via email.</p>
+                                <p className="text-slate-700 mb-6">Please enter your email address. You will receive a link to create a new password via email.</p>
                                 <form className="ltr:text-left rtl:text-right">
                                     <div className="grid grid-cols-1">
                                         <div className="mb-4">
@@ -158,7 +158,7 @@ export default function ResetPassword() {
                                         </div>
 
                                         <div className="text-center">
-                                            <span className="text-slate-400 me-2">Remember your password ? </span><Link2 to="/auth-login" className="text-black dark:text-white font-bold">Sign in</Link2>
+                                            <span className="text-slate-700 me-2">Remember your password ? </span><Link2 to="/auth-login" className="text-black dark:text-white font-bold">Sign in</Link2>
                                         </div>
                                     </div>
                                 </form>

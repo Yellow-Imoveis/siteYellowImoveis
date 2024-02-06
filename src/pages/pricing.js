@@ -49,10 +49,10 @@ export default function Pricing() {
                             <div className="p-6">
                                 <h5>Pricing Features:</h5>
                                 <ul className="list-none">
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Full Access</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Source Files</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Free Appointments</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Enhanced Security</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Full Access</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Source Files</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Free Appointments</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Enhanced Security</li>
                                 </ul>
                                 <Link2 to="#" className="btn bg-yellow-500 hover:bg-yellow-600 border-green-600 dark:border-green-600 text-white rounded-md w-full mt-4">Get Started</Link2>
                             </div>
@@ -77,10 +77,10 @@ export default function Pricing() {
                                 <h5>Pricing Features:</h5>
 
                                 <ul className="list-none">
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Full Access</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Source Files</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Free Appointments</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Enhanced Security</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Full Access</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Source Files</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Free Appointments</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Enhanced Security</li>
                                 </ul>
                                 <Link2 to="#" className="btn bg-yellow-500 hover:bg-yellow-600 border-green-600 dark:border-green-600 text-white rounded-md w-full mt-4">Get Started</Link2>
                             </div>
@@ -105,10 +105,10 @@ export default function Pricing() {
                                 <h5>Pricing Features:</h5>
 
                                 <ul className="list-none">
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Full Access</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Source Files</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Free Appointments</li>
-                                    <li className="text-slate-400 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Enhanced Security</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Full Access</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Source Files</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Free Appointments</li>
+                                    <li className="text-slate-700 mt-2"><span className="text-green-600 text-lg me-2"><i className="uil uil-check-circle align-middle"></i></span>Enhanced Security</li>
                                 </ul>
                                 <Link2 to="#" className="btn bg-yellow-500 hover:bg-yellow-600 border-green-600 dark:border-green-600 text-white rounded-md w-full mt-4">Get Started</Link2>
                             </div>
@@ -120,7 +120,7 @@ export default function Pricing() {
                     <div className="grid grid-cols-1 text-center">
                         <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Have Question ? Get in touch!</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
+                        <p className="text-slate-700 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
 
                         <div className="mt-6">
                             <Link2 to="/contact" className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-md"><i className="uil uil-phone align-middle me-2"></i> Contact us</Link2>

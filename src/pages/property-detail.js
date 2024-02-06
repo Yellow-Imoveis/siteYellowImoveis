@@ -44,6 +44,7 @@ function PropertyDetail(props) {
 /**
      * @type {Array<{ src: string, position: number }>}
      */
+    propertyData.crm_images = propertyData.crm_images.filter((image) => image.active === 1);
     const images = propertyData.crm_images.map((el) => ({
       src: el.image,
       position: el.position,
@@ -61,7 +62,7 @@ function PropertyDetail(props) {
     if (!window.FB) {
       window.fbAsyncInit = function () {
         window.FB.init({
-          appId: "6507973162635877", 
+          appId: "1033823097706771", 
           cookie: true,
           xfbml: true,
           version: "v13.0",
@@ -157,30 +158,30 @@ function PropertyDetail(props) {
                   </span>
                 </div>
 
-                <ul className="py-6 flex flex-wrap items-center list-none">
+                <ul className="py-6 px-2 flex flex-wrap items-center place-content-around list-none bg-slate-100 shadow-[2px_3px_5px_rgba(0,0,0,0.24)] mb-6 rounded-lg gap-y-6">
                   <li className="flex items-center lg:me-6 me-4">
-                    <i className="uil uil-compress-arrows lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-compress-arrows bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.total_area} m<sup>2</sup>
                     </span>
                   </li>
 
                   <li className="flex items-center lg:me-6 me-4">
-                    <i className="uil uil-bed-double lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-bed-double bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.bedrooms} quartos
                     </span>
                   </li>
 
                   <li className="flex items-center lg:me-6 me-4">
-                    <i className="uil uil-bath lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-bath bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.bathrooms} banheiros
                     </span>
                   </li>
 
                   <li className="flex items-center">
-                    <i className="uil uil-car-sideview lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-car-sideview bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.garages} vagas de garagem
                     </span>
@@ -188,7 +189,7 @@ function PropertyDetail(props) {
                 </ul>
 
                 <div
-                  className="text-slate-400"
+                  className="text-slate-700"
                   dangerouslySetInnerHTML={{
                     __html: propertyData?.description,
                   }}
@@ -235,17 +236,17 @@ function PropertyDetail(props) {
 
                       {/* <ul className="list-none mt-4">
                                                 <li className="flex justify-between items-center">
-                                                    <span className="text-slate-400 text-sm">Days on Hously</span>
+                                                    <span className="text-slate-700 text-sm">Days on Hously</span>
                                                     <span className="font-medium text-sm">124 Days</span>
                                                 </li>
 
                                                 <li className="flex justify-between items-center mt-2">
-                                                    <span className="text-slate-400 text-sm">Preço por m<sup>2</sup></span>
+                                                    <span className="text-slate-700 text-sm">Preço por m<sup>2</sup></span>
                                                     <span className="font-medium text-sm">$ 186</span>
                                                 </li>
 
                                                 <li className="flex justify-between items-center mt-2">
-                                                    <span className="text-slate-400 text-sm">Monthly Payment (estimate)</span>
+                                                    <span className="text-slate-700 text-sm">Monthly Payment (estimate)</span>
                                                     <span className="font-medium text-sm">$ 1497/Monthly</span>
                                                 </li>
                                             </ul> */}

@@ -164,7 +164,7 @@ export default function Contact() {
 
                             <div className="content mt-7">
                                 <h5 className="title h5 text-xl font-medium">Telefone</h5>
-                                <p className="text-slate-400 mt-3">
+                                <p className="text-slate-700 mt-3">
                                     Entre em contato conosco através dos telefones abaixo.
                                 </p>
 
@@ -186,7 +186,7 @@ export default function Contact() {
 
                             <div className="content mt-7">
                                 <h5 className="title h5 text-xl font-medium">Email</h5>
-                                <p className="text-slate-400 mt-3">
+                                <p className="text-slate-700 mt-3">
                                     Entre em contato conosco através dos emails abaixo.
                                 </p>
 
@@ -207,7 +207,7 @@ export default function Contact() {
 
                             <div className="content mt-7">
                                 <h5 className="title h5 text-xl font-medium">Localização</h5>
-                                <p className="text-slate-400 mt-3">Estrada de Santa Isabel, 2320, Jardim Fazenda Rincão <br /> Arujá, SP</p>
+                                <p className="text-slate-700 mt-3">Estrada de Santa Isabel, 2320, Jardim Fazenda Rincão <br /> Arujá, SP</p>
 
                                 <div className="mt-5">
                                     <a href="https://www.google.com/maps/place/Yellow+Im%C3%B3veis/@-23.4176738,-46.3289174,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce7cf3e73126db:0x17c8e156136c3853!8m2!3d-23.4176738!4d-46.3263425!16s%2Fg%2F11g8dkkkf3?entry=ttu"

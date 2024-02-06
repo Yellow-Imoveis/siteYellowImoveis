@@ -39,7 +39,7 @@ export default function Footer() {
                                     <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
                                         <div className="ltr:md:text-left rtl:md:text-right text-center z-1">
                                             <h3 className="md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Fique por dentro das novidades!</h3>
-                                            <p className="text-slate-400 max-w-xl mx-auto">Inscreva-se para acompanhar as novidades.</p>
+                                            <p className="text-slate-700 max-w-xl mx-auto">Inscreva-se para acompanhar as novidades.</p>
                                         </div>
 
                                         <div className="flex justify-center subcribe-form z-1">
@@ -94,21 +94,21 @@ export default function Footer() {
                                     <div className="lg:col-span-2 md:col-span-4">
                                         <h5 className="tracking-[1px] text-gray-100 font-semibold">A Empresa</h5>
                                         <ul className="list-none footer-list mt-6">
-                                            <li><Link2 to="/sobre-nos" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Sobre nós</Link2></li>
-                                            {/* <li className="mt-[10px]"><Link2 to="/features" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Serviços</Link2></li> */}
-                                            {/* <li className="mt-[10px]"><Link2 to="/pricing" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Pricing</Link2></li> */}
-                                            {/* <li className="mt-[10px]"><Link2 to="/blog" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Blog</Link2></li> */}
-                                            {/* <li className="mt-[10px]"><Link2 to="/auth-login" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Login</Link2></li> */}
+                                            <li><Link2 to="/sobre-nos" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Sobre nós</Link2></li>
+                                            {/* <li className="mt-[10px]"><Link2 to="/features" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Serviços</Link2></li> */}
+                                            {/* <li className="mt-[10px]"><Link2 to="/pricing" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Pricing</Link2></li> */}
+                                            {/* <li className="mt-[10px]"><Link2 to="/blog" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Blog</Link2></li> */}
+                                            {/* <li className="mt-[10px]"><Link2 to="/auth-login" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Login</Link2></li> */}
                                         </ul>
                                     </div>
 
                                     <div className="lg:col-span-3 md:col-span-4">
                                         <h5 className="tracking-[1px] text-gray-100 font-semibold">Links úteis</h5>
                                         <ul className="list-none footer-list mt-6">
-                                            {/* <li><Link2 to="/terms" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Termos de seviços</Link2></li> */}
-                                            {/* <li className="mt-[10px]"><Link2 to="/privacy" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Política de Privacidade</Link2></li> */}
-                                            <li className="mt-[10px]"><Link2 to="/favoritos" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Lista de imóveis</Link2></li>
-                                            <li className="mt-[10px]"><Link2 to="/fale-conosco" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Fale conosco</Link2></li>
+                                            {/* <li><Link2 to="/terms" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Termos de seviços</Link2></li> */}
+                                            {/* <li className="mt-[10px]"><Link2 to="/privacy" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Política de Privacidade</Link2></li> */}
+                                            <li className="mt-[10px]"><Link2 to="/favoritos" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Lista de imóveis</Link2></li>
+                                            <li className="mt-[10px]"><Link2 to="/fale-conosco" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Fale conosco</Link2></li>
                                         </ul>
                                     </div>
 
@@ -125,15 +125,15 @@ export default function Footer() {
                                         <div className="flex mt-6">
                                             <Mail className="w-5 h-5 text-green-600 me-3"></Mail>
                                             <div className="">
-                                                <a href="mailto:contact@example.com" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">contato@yellowimoveis.com.br</a>
+                                                <a href="mailto:contact@example.com" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out">contato@yellowimoveis.com.br</a>
                                             </div>
                                         </div>
 
                                         <div className="flex mt-6">
                                             <Phone className="w-5 h-5 text-green-600 me-3"></Phone>
                                             <div className="">
-                                                <a href="tel:+152534-468-854" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">+55 (11) 4654-3334</a><br />
-                                                <a href="https://wa.me/5511996800593" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out" target="_blank" rel="noreferrer">+55 (11) 99680-0593</a>
+                                                <a href="tel:+152534-468-854" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out">+55 (11) 4654-3334</a><br />
+                                                <a href="https://wa.me/5511996800593" className="text-slate-300 hover:text-slate-700 duration-500 ease-in-out" target="_blank" rel="noreferrer">+55 (11) 99680-0593</a>
                                             </div>
                                         </div>
                                     </div>
@@ -156,16 +156,16 @@ export default function Footer() {
                                 {/* <li className="inline ms-1"><Link2 to="https://1.envato.market/hously-react" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-green-600 dark:hover:border-green-600 hover:bg-yellow-500 dark:hover:bg-yellow-500"><ShoppingCart className="h-4 w-4"></ShoppingCart></Link2></li> */}
                                 {/* <li className="inline ms-1"><Link2 to="https://dribbble.com/shreethemes" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-green-600 dark:hover:border-green-600 hover:bg-yellow-500 dark:hover:bg-yellow-500"><Dribbble className="h-4 w-4"></Dribbble></Link2></li> */}
                                 {/* <li className="inline ms-1"><Link2 to="https://www.behance.net/shreethemes" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-green-600 dark:hover:border-green-600 hover:bg-yellow-500 dark:hover:bg-yellow-500"><i className="uil uil-behance align-baseline"></i></Link2></li> */}
-                                <li className="inline ms-1"><Link2 to="https://www.linkedin.com/in/yellow-im%C3%B3veis-790b54228/" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover: dark:hover: hover:bg-yellow-500 dark:hover:bg-yellow-500"><Linkedin className="h-4 w-4"></Linkedin></Link2></li>
+                                {/* <li className="inline ms-1"><Link2 to="http://linkedin.com/company/yellowimoveis" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover: dark:hover: hover:bg-yellow-500 dark:hover:bg-yellow-500"><Linkedin className="h-4 w-4"></Linkedin></Link2></li> */}
                                 <li className="inline ms-1"><Link2 to="https://www.facebook.com/yellowimoveis.com.br" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover: dark:hover: hover:bg-yellow-500 dark:hover:bg-yellow-500"><Facebook className="h-4 w-4"></Facebook></Link2></li>
-                                <li className="inline ms-1"><Link2 to="https://www.instagram.com/yellowimoveis.oficial/" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover: dark:hover: hover:bg-yellow-500 dark:hover:bg-yellow-500"><Instagram className="h-4 w-4"></Instagram></Link2></li>
+                                <li className="inline ms-1"><Link2 to="https://www.instagram.com/yellowimoveis.oficial" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover: dark:hover: hover:bg-yellow-500 dark:hover:bg-yellow-500"><Instagram className="h-4 w-4"></Instagram></Link2></li>
                                 <li className="inline ms-1"><Link2 to="https://www.youtube.com/@yellowimoveis8156/" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover: dark:hover: hover:bg-yellow-500 dark:hover:bg-yellow-500"><Youtube className="h-4 w-4"></Youtube></Link2></li>
-                                {/* <li className="inline ms-1"><Link2 to="https://twitter.com/yellowimoveis" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-green-600 dark:hover:border-green-600 hover:bg-yellow-500 dark:hover:bg-yellow-500"><Twitter className="h-4 w-4"></Twitter></Link2></li> */}
+                              {/* <li className="inline ms-1"><Link2 to="https://twitter.com/yellowimoveis" target="_blank" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover:border-green-600 dark:hover:border-green-600 hover:bg-yellow-500 dark:hover:bg-yellow-500"><Twitter className="h-4 w-4"></Twitter></Link2></li> */}
                                 <li className="inline ms-1"><Link2 to="mailto:contato@yellowimoveis.com.br" className="btn btn-icon btn-sm text-gray-400 hover:text-white border border-gray-800 dark:border-gray-700 rounded-md hover: dark:hover: hover:bg-yellow-500 dark:hover:bg-yellow-500"><Mail className="h-4 w-4"></Mail></Link2></li>
                             </ul>
                         </div>
                     </div>
-                </div>
+</div>
             </footer>
         </>
     );
