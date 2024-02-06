@@ -29,17 +29,36 @@ function Root({ images, onClick }) {
   }
 
   return (
-    <TinySlider settings={createCarouselSettings(images)}>
-      {images.map((image, index) => (
-        <Image
-          key={index} 
-          index={index} 
-          src={image.src} 
-          containerClassName={"h-[500px]"}
-          onClick={() => onClick(index)} 
-        />
-      ))}
-    </TinySlider>
+    <div className="relative">
+      {/* slider */}
+      <TinySlider settings={createCarouselSettings(images)}>
+        {images.map((image, index) => (
+          <Image
+            key={index} 
+            index={index} 
+            src={image.src} 
+            containerClassName={"h-[500px]"}
+            onClick={() => onClick(index)} 
+          />
+        ))}      
+      </TinySlider>
+      
+      {/* slide controls */}
+      <div 
+        id="tns-controls" 
+        className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between pb-10 px-4"
+      >
+        {/* left button  */}
+        <button id="tns-prev-button" className="btn btn-icon">
+          <i className="uil uil-angle-left-b text-5xl text-slate-900/60 hover:text-yellow-400"></i>
+        </button>
+        
+        {/* right button */}
+        <button id="tns-next-button" className="btn btn-icon">
+          <i className="uil uil-angle-right-b text-5xl text-slate-900/60 hover:text-yellow-400"></i>
+        </button>
+      </div>
+    </div>
   );
 }
 

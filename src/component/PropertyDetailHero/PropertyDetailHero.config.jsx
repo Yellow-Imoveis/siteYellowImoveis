@@ -20,8 +20,8 @@ function createCarouselSettings(images) {
     mouseDrag: true, // enable drag image to move around
     items: 1, // show 1 image at a time by default
     gutter: 10, // space between images
-    controls: false, // hide control buttons (prev/next)
     navPosition: "bottom",
+    controlsContainer: "#tns-controls",
     responsive: {
       768: {
         items: calcItemsSpace(images.length, 2.2)
