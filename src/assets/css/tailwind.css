@@ -1820,7 +1820,7 @@ video {
 }
 .text-white {
   --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  color :#161c2d !important;
 }
 .text-white\/5 {
   color: rgb(255 255 255 / 0.05) !important;
