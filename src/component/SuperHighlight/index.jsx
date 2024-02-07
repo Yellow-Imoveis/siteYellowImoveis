@@ -23,7 +23,7 @@ export default function About() {
     const customContainerStyle = {
         background: '#eeee',
         padding: '3%',
-        borderRadius: '1%',
+        borderRadius: '15px',
         border: '1px solid #ccc',
         boxShadow: 'rgb(0 0 0 / 11%) 2px 2px 5px',
         width: '100%', 
