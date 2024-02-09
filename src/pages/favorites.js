@@ -20,7 +20,7 @@ export default function Favorites() {
                 <div className="absolute inset-0 bg-black opacity-80"></div>
                 <div className="container">
                     <div className="grid grid-cols-1 text-center mt-10">
-                        <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Imóveis favoritos</h3>
+                        <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white/70">Imóveis favoritos</h3>
                     </div>
                 </div>
             </section>

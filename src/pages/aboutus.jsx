@@ -29,7 +29,7 @@ export default function Aboutus() {
                 <div className="absolute inset-0 bg-black opacity-80"></div>
                 <div className="container">
                     <div className="grid grid-cols-1 text-center mt-10">
-                        <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Sobre nós</h3>
+                        <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white/70">Sobre nós</h3>
                     </div>
                 </div>
             </section>
@@ -50,7 +50,7 @@ export default function Aboutus() {
                     <div className="grid grid-cols-1 pb-8 text-center">
                         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Conheça nosso Team</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">A Yellow imóveis tem foco na excelencia, e pensando nisso temos os melhores profissionais do mercado.</p>
+                        <p className="text-slate-700 max-w-xl mx-auto">A Yellow imóveis tem foco na excelencia, e pensando nisso temos os melhores profissionais do mercado.</p>
                     </div>
 
                     {isLoading && (
@@ -78,7 +78,7 @@ export default function Aboutus() {
 
                                             <div className="content mt-3">
                                                 <Link2 to="#" className="text-xl font-medium hover:text-green-600 transition-all duration-500 ease-in-out">{el.name}</Link2>
-                                                <p className="text-slate-400 text-xs">{el.role}</p>
+                                                <p className="text-slate-700 text-xs">{el.role}</p>
                                                 {el.creci && (
                                                     <p className="text-sm">{el.creci}</p>
                                                 )}
@@ -99,7 +99,7 @@ export default function Aboutus() {
                     <div className="grid grid-cols-1 text-center">
                         <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Ainda tem dúvidas? Fale conosco!</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">Teremos o maior prazer em ajuda-lo na sua jornada de venda, compra ou locação de um imóvel.</p>
+                        <p className="text-slate-700 max-w-xl mx-auto">Teremos o maior prazer em ajuda-lo na sua jornada de venda, compra ou locação de um imóvel.</p>
 
                         <div className="mt-6">
                             <Link2 to="/fale-conosco" className="btn bg-yellow-500 hover:bg-yellow-600 text-white rounded-md"><i className="uil uil-phone align-middle me-2"></i> Fale conosco</Link2>

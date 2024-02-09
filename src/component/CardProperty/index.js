@@ -114,7 +114,7 @@ export default function CardProperty({ property }) {
                             
                             {property.available_to_sell === 1 && (
                                 <li className="my-4">
-                                    <span className="text-slate-400">Venda</span>
+                                    <span className="text-slate-700">Venda</span>
                                     <p className="text-lg font-medium">
                                         {property.price && parseFloat(property.price) > 0 && (
                                             <>
@@ -131,7 +131,7 @@ export default function CardProperty({ property }) {
                             
                             {property.available_to_rent === 1 && (
                                 <li className="my-4">
-                                    <span className="text-slate-400">Locação</span>
+                                    <span className="text-slate-700">Locação</span>
                                     <p className="text-lg font-medium">
                                         {property.price_to_rent && parseFloat(property.price_to_rent) > 0 && (
                                             <>
@@ -148,7 +148,7 @@ export default function CardProperty({ property }) {
                             
 
                             {/*<li>*/}
-                            {/*    <span className="text-slate-400">Rating</span>*/}
+                            {/*    <span className="text-slate-700">Rating</span>*/}
                             {/*    <ul className="text-lg font-medium text-amber-400 list-none">*/}
                             {/*        <li className="inline ms-1"><i className="mdi mdi-star"></i></li>*/}
                             {/*        <li className="inline ms-1"><i className="mdi mdi-star"></i></li>*/}

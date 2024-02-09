@@ -158,30 +158,30 @@ function PropertyDetail(props) {
                   </span>
                 </div>
 
-                <ul className="py-6 flex flex-wrap items-center list-none">
+                <ul className="py-6 px-2 flex flex-wrap items-center place-content-around list-none bg-slate-100 shadow-[2px_3px_5px_rgba(0,0,0,0.24)] mb-6 rounded-lg gap-y-6">
                   <li className="flex items-center lg:me-6 me-4">
-                    <i className="uil uil-compress-arrows lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-compress-arrows bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.total_area} m<sup>2</sup>
                     </span>
                   </li>
 
                   <li className="flex items-center lg:me-6 me-4">
-                    <i className="uil uil-bed-double lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-bed-double bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.bedrooms} quartos
                     </span>
                   </li>
 
                   <li className="flex items-center lg:me-6 me-4">
-                    <i className="uil uil-bath lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-bath bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.bathrooms} banheiros
                     </span>
                   </li>
 
                   <li className="flex items-center">
-                    <i className="uil uil-car-sideview lg:text-3xl text-2xl me-2 text-green-600"></i>
+                    <i className="uil uil-car-sideview bg-yellow-500 p-1 rounded-lg flex items-center text-black lg:text-3xl text-2xl me-2"></i>
                     <span className="lg:text-xl">
                       {propertyData?.garages} vagas de garagem
                     </span>
@@ -189,7 +189,7 @@ function PropertyDetail(props) {
                 </ul>
 
                 <div
-                  className="text-slate-400"
+                  className="text-slate-700"
                   dangerouslySetInnerHTML={{
                     __html: propertyData?.description,
                   }}
@@ -228,7 +228,7 @@ function PropertyDetail(props) {
                               }).format(propertyData?.price_to_rent)}
                             </span>
 
-                            <span className="bg-yellow-500/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
+                            <span  className="btn bg-yellow-500  border-yellow-500 dark:border-yellow-500 text-white rounded-md">
                               Para locação
                             </span>
                           </div>
@@ -236,17 +236,17 @@ function PropertyDetail(props) {
 
                       {/* <ul className="list-none mt-4">
                                                 <li className="flex justify-between items-center">
-                                                    <span className="text-slate-400 text-sm">Days on Hously</span>
+                                                    <span className="text-slate-700 text-sm">Days on Hously</span>
                                                     <span className="font-medium text-sm">124 Days</span>
                                                 </li>
 
                                                 <li className="flex justify-between items-center mt-2">
-                                                    <span className="text-slate-400 text-sm">Preço por m<sup>2</sup></span>
+                                                    <span className="text-slate-700 text-sm">Preço por m<sup>2</sup></span>
                                                     <span className="font-medium text-sm">$ 186</span>
                                                 </li>
 
                                                 <li className="flex justify-between items-center mt-2">
-                                                    <span className="text-slate-400 text-sm">Monthly Payment (estimate)</span>
+                                                    <span className="text-slate-700 text-sm">Monthly Payment (estimate)</span>
                                                     <span className="font-medium text-sm">$ 1497/Monthly</span>
                                                 </li>
                                             </ul> */}
@@ -261,7 +261,7 @@ function PropertyDetail(props) {
                     <div className="mt-2">
                       <Link2
                         to="/fale-conosco"
-                        className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-phone align-middle me-2"></i> Fale
                         conosco
@@ -279,7 +279,7 @@ function PropertyDetail(props) {
                         <div className="mt-2">
                           <button
                             onClick={openSimulation}
-                            className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                            className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                           >
                             Simular financiamento
                           </button>
@@ -311,7 +311,7 @@ function PropertyDetail(props) {
                     <div className="mt-2 flex flex-wrap justify-center items-center gap-4">
                       <button
                         onClick={compartilharNoMessenger}
-                        className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-facebook align-middle"></i>
                       </button>
@@ -319,7 +319,7 @@ function PropertyDetail(props) {
                         href={`https://api.whatsapp.com/send?text=${window.location.href}`}
                         rel="noreferrer"
                         target="_blank"
-                        className="btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-whatsapp align-middle"></i>
                       </a>
@@ -327,7 +327,7 @@ function PropertyDetail(props) {
                         href={`https://twitter.com/messages/compose?text=${window.location.href}`}
                         rel="noreferrer"
                         target="_blank"
-                        className="twitter-dm-button btn bg-transparent hover:bg-yellow-500 border border-green-600 text-green-600 hover:text-white rounded-md"
+                        className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md"
                       >
                         <i className="uil uil-twitter align-middle"></i>
                       </a>

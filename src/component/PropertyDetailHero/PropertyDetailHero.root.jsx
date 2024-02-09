@@ -1,50 +1,55 @@
 import PropTypes from 'prop-types';
+import TinySlider from "tiny-slider-react";
+import { createCarouselSettings } from './PropertyDetailHero.config';
 import { Image } from './PropertyDetailHero.image';
+import { Control } from './PropertyDetailHero.control';
+
+/**
+ * @typedef {object} RootProps
+ * @property {{src: string, position: number}[]} images - array of image objects
+ * @property {null | (index: number) => void} onClick - function to handle click event
+ */
 
 /**
  * PropertyDetailHero component
- * @param {object} props - component props
- * @param {{src: string, position: number}[]} props.images - array of image objects
- * @param {null | (index: number) => void} props.onClick - function to handle click event
+ * @param {RootProps} props - component props
  */
 function Root({ images, onClick }) {
   if (images.length === 0) return null;
-
-  const firstImage = images[0];
-  const restImages = images.slice(1, 5);
-
-  if (images.length === 1) return (
-    <Image
-      src={firstImage.src} 
-      containerClassName={"h-[500px]"}
-    />
-  )
+  
+  if (images.length === 1) {
+    return (
+      <div className="flex justify-center">
+        <Image 
+          src={images[0].src} 
+          containerClassName={"h-[500px] w-[1100px]"} 
+          onClick={onClick} 
+        />
+      </div>
+    )
+  }
 
   return (
-    // 4x4 grid 
-    <div className="relative px-2 grid grid-cols-4 grid-rows-4 gap-2 h-screen md:h-[500px]">
-      {/* mobile: 4x2  */}
-      {/* desktop: 2x4  */}
-      <Image 
-        src={firstImage.src}
-        index={0}
-        containerClassName="col-span-4 row-span-2 md:col-span-2 md:row-span-4"
-        onClick={() => onClick?.(0)}
-      /> 
+    <div className="relative">
+      {/* slider */}
+      <TinySlider settings={createCarouselSettings(images)}>
+        {images.map((image, index) => (
+          <Image
+            key={index} 
+            index={index} 
+            src={image.src} 
+            containerClassName={"h-[500px]"}
+            onClick={() => onClick(index)} 
+          />
+        ))}      
+      </TinySlider>
 
-      {/* mobile: 2x1  */}
-      {/* desktop: 1x2  */}
-      {restImages.map((image, index) => {
-        return <Image 
-          index={index + 1} 
-          key={image.src}
-          src={image.src} 
-          containerClassName={"col-span-2 row-span-1 md:col-span-1 md:row-span-2"}
-          onClick={() => onClick?.(index + 1)}
-        />
-      })}
+      <Control 
+        id="tns-controls" 
+        containerClassName="absolute top-[230px] left-0 right-0 px-4"
+      />
     </div>
-  )
+  );
 }
 
 // use PropTypes to validate the type of props passed to the component

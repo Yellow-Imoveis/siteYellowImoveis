@@ -24,7 +24,7 @@ export default function Index() {
                         <div className="container">
                             <div className="grid grid-cols-1">
                                 <div className="ltr:md:text-left rtl:md:text-right text-center">
-                                    <h2 className="font-thin text-white lg:leading-normal leading-normal text-4xl">
+                                    <h2 className="font-thin text-white/70 lg:leading-normal leading-normal text-4xl">
                                         A Yellow Imóveis tem a plataforma ideal <br />para vender e alugar imóveis sem burocracia.
                                     </h2>
                                     {/*<p className="text-white/70 text-xl max-w-xl">*/}
@@ -59,7 +59,7 @@ export default function Index() {
                     <div className="grid grid-cols-1 text-center">
                         <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Tem dúvidas ? Fale conosco!</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">
+                        <p className="text-slate-700 max-w-xl mx-auto">
                             Converse com nossa equipe de atendimento e tire todas as suas dúvidas.
                         </p>
 

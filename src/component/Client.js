@@ -38,7 +38,7 @@ export default function Client() {
                 <div className="grid grid-cols-1 pb-8 text-center">
                     <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">O que dizem nossos clientes ?</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">
+                    <p className="text-slate-700 max-w-xl mx-auto">
                         Veja o que nossos clientes estão dizendo sobre nós.
                     </p>
                 </div>
@@ -69,7 +69,7 @@ export default function Client() {
                                     {data && data.map((el, index) => (
                                         <div className="tiny-slide" key={index}>
                                             <div className="text-center">
-                                                <p className="text-xl text-slate-400 italic"> " {el.description} " </p>
+                                                <p className="text-xl text-slate-700 italic"> " {el.description} " </p>
 
                                                 <div className="text-center mt-5">
                                                     <ul className="text-xl font-medium text-amber-400 list-none mb-2">
@@ -84,7 +84,7 @@ export default function Client() {
                                                         <img src={el.avatar_url} className="h-14 w-14 rounded-full shadow-md dark:shadow-gray-700 mx-auto" alt="Avatar" />
                                                     )}
                                                     <h6 className="mt-2 fw-semibold">{el.name}</h6>
-                                                    {/* <span className="text-slate-400 text-sm">{el.designation}</span> */}
+                                                    {/* <span className="text-slate-700 text-sm">{el.designation}</span> */}
                                                 </div>
                                             </div>
                                         </div>
