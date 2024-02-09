@@ -48,7 +48,7 @@ export default function Aboutus() {
             <section className="relative md:pb-24 pb-16">
                 <div className="container mt-16 lg:mt-4">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Conheça nosso Team</h3>
+                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Conheça nosso Time</h3>
 
                         <p className="text-slate-700 max-w-xl mx-auto">A Yellow imóveis tem foco na excelencia, e pensando nisso temos os melhores profissionais do mercado.</p>
                     </div>
