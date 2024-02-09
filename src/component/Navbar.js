@@ -190,7 +190,7 @@ export default function Navbar(props) {
                         </li> */}
                         <li className="sm:inline ps-1 mb-0 hidden">
                             {/* <Link to="/auth-signup" className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-full">Signup</Link> */}
-                            <Link to="/fale-conosco" className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-full">Fale com um corretor</Link>
+                            <Link to="/fale-conosco" className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-md">Fale com um corretor</Link>
                             {/* <a href="https://wa.me/5511996800593" target="_blank" className="btn bg-yellow-500 hover:bg-yellow-600 border-yellow-500 dark:border-yellow-500 text-white rounded-full">Fale com um corretor</a> */}
                         </li>
                     </ul>
