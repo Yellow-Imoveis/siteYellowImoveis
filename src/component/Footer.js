@@ -45,7 +45,7 @@ export default function Footer() {
                                         <div className="flex justify-center subcribe-form z-1">
                                             {mutation.isSuccess && (
                                                 <div className="alert alert-success" role="alert">
-                                                    {mutation.data.message}
+                                                  Inscrição realizada com sucesso.
                                                 </div>
                                             )}
 

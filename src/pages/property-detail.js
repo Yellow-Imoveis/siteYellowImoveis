@@ -212,7 +212,7 @@ function PropertyDetail(props) {
                               }).format(propertyData?.price)}
                             </span>
 
-                            <span className="bg-yellow-500/10 text-green-600 text-sm px-2.5 py-0.75 rounded h-6">
+                            <span className="bg-amber-200 text-black font-bold text-md px-2.5 py-0.75 rounded">
                               Para venda
                             </span>
                           </div>
@@ -228,7 +228,7 @@ function PropertyDetail(props) {
                               }).format(propertyData?.price_to_rent)}
                             </span>
 
-                            <span  className="btn bg-yellow-500  border-yellow-500 dark:border-yellow-500 text-white rounded-md">
+                            <span  className="bg-amber-200 text-black font-bold text-md px-2.5 py-0.75 rounded">
                               Para locação
                             </span>
                           </div>
