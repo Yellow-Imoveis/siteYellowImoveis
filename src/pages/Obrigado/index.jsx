@@ -18,8 +18,8 @@ const Obrigado = () => {
                             <div className="flex justify-center items-center mt-40">
                               <div className="text-center">
                                 {/* <div className="text-9xl">👍</div> */}
-                                  <h3 className="text-4xl font-bold">Obrigado!</h3>
-                                  <p className="text-xl">Sua mensagem foi enviada com sucesso.</p>
+                                  <h3 className="text-white/70 font-bold">Obrigado!</h3>
+                                  <p className="text-white/70">Sua mensagem foi enviada com sucesso.</p>
                                 </div>
                               </div>
                           </div>

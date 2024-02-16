@@ -164,38 +164,36 @@ const SearchForm = ({ option, handleSubmitForm }) => {
             </div>
 
             <div>
-              <label htmlFor="buy-properties" className="form-label text-slate-900 dark:text-white font-medium">Categorias:</label>   
-              <div className="filter-search-form relative filter-border mt-2">
-                <i className="sm:block lg:hidden xl:block uil uil-estate icons"></i>
-                <Controller
-                  control={control}
-                  name='category_id'
-                  rules={{ required: false }}
-                  render={({ field }) => (
-                      <Select 
-                          placeholder="Escolha a categoria" 
-                          className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
-                          options={categories} 
-                          isLoading={isLoading} 
-                          loadingMessage={() => 'Carregando categorias...'} 
-                          {...field} 
-                          // value={categories && categories.find((c) => c.value === field.value)}
+  <label htmlFor="buy-properties" className="form-label text-slate-900 dark:text-white font-medium">Categorias:</label>   
+  <div className="filter-search-form relative filter-border mt-2">
+    <i className="sm:block lg:hidden xl:block uil uil-estate icons"></i>
+    <Controller
+      control={control}
+      name='category_id'
+      rules={{ required: false }}
+      render={({ field }) => (
+        <Select 
+          placeholder="Escolha a categoria" 
+          className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
+          options={categories} 
+          isLoading={isLoading} 
+          loadingMessage={() => 'Carregando categorias...'} 
+          {...field} 
+          // value={categories && categories.find((c) => c.value === field.value)}
                           value={categories && categories.find((c) => {
                             return c.options && c.options.find((o) => {
                               return o.value === params.categoria;
                             });
                           })}
-                          onChange={val => {
-                            field.onChange(val.value);
-                            params.categoria = val.value;
-
-                            alert(`Escolhido categoria: ${val.value}`)
-                          }}
-                      />
-                  )}
-                />
-              </div>
-            </div>
+          onChange={val => {
+            field.onChange(val.value);
+            params.categoria = val.value;
+          }}
+        />
+      )}
+    />
+  </div>
+</div>
 
             <div>
               <label htmlFor="buy-min-price" className="form-label text-slate-900 dark:text-white font-medium">Preço mínimo :</label>                                                        
