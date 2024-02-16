@@ -18,6 +18,14 @@ const settings = {
     autoplayTimeout: 10000,
     navPosition: "bottom",
     animateDelay: 3000,
+    responsive: {
+        768: {
+            items: 2
+        },
+        1124: {
+            items: 3
+        }
+    }
 };
 
 export default function Client() {
@@ -43,13 +51,13 @@ export default function Client() {
                     </p>
                 </div>
 
-                <div className="flex justify-center relative mt-16">
-                    <div className="relative lg:w-1/3 md:w-1/2 w-full">
-                        <div className="absolute -top-20 md:-start-24 -start-0">
+                <div className="flex w-full justify-center  relative mt-16">
+                    <div className="relative min-[1124px]:w-full w-3/4">
+                        <div className="absolute -top-24 md:-start-20 -left-20">
                             <i className="mdi mdi-format-quote-open text-9xl opacity-5"></i>
                         </div>
 
-                        <div className="absolute bottom-28 md:-end-24 -end-0">
+                        <div className="absolute -bottom-20 md:-end-20 -end-20">
                             <i className="mdi mdi-format-quote-close text-9xl opacity-5"></i>
                         </div>
 
@@ -64,32 +72,33 @@ export default function Client() {
                         )}
 
                         {!isLoading && (
-                            <div className="tiny-single-item">
-                                <TinySlider settings={settings} >
-                                    {data && data.map((el, index) => (
-                                        <div className="tiny-slide" key={index}>
-                                            <div className="text-center">
-                                                <p className="text-xl text-slate-700 italic"> " {el.description} " </p>
+                            <div className="depoimentos-carousel">
+                                <div className="tiny-single-item">
+                                    <TinySlider settings={settings} >
+                                        {data && data.map((el, index) => (
+                                            <div className="tiny-slide" key={index}>
+                                                <div className="text-center h-full flex flex-col justify-center rounded-lg border-b border-r border-slate-300 p-4 bg-gray-100">
+                                                    <p className="text-xl text-slate-700 italic"> " {el.description} " </p>
+                                                    <div className="text-center mt-5">
+                                                        <ul className="text-xl font-medium text-amber-400 list-none mb-2">
+                                                            <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
+                                                            <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
+                                                            <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
+                                                            <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
+                                                            <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
+                                                        </ul>
 
-                                                <div className="text-center mt-5">
-                                                    <ul className="text-xl font-medium text-amber-400 list-none mb-2">
-                                                        <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
-                                                        <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
-                                                        <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
-                                                        <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
-                                                        <li className="inline ms-1"><i className="mdi mdi-star"></i></li>
-                                                    </ul>
-
-                                                    {el.avatar_url && (
-                                                        <img src={el.avatar_url} className="h-14 w-14 rounded-full shadow-md dark:shadow-gray-700 mx-auto" alt="Avatar" />
-                                                    )}
-                                                    <h6 className="mt-2 fw-semibold">{el.name}</h6>
-                                                    {/* <span className="text-slate-700 text-sm">{el.designation}</span> */}
+                                                        {el.avatar_url && (
+                                                            <img src={el.avatar_url} className="h-14 w-14 rounded-full shadow-md dark:shadow-gray-700 mx-auto" alt="Avatar" />
+                                                        )}
+                                                        <h6 className="mt-2 fw-semibold">{el.name}</h6>
+                                                        {/* <span className="text-slate-700 text-sm">{el.designation}</span> */}
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
-                                </TinySlider>
+                                        ))}
+                                    </TinySlider>
+                                </div>
                             </div>
                         )}
 
