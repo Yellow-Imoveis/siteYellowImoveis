@@ -3625,15 +3625,21 @@ h6,
 }
 
 #tns1-ow .tns-controls button[data-controls="prev"] {
-  left: 0;
+  left: -35px;
 }
 
 #tns1-ow .tns-controls button[data-controls="next"] {
-  right: 0;
+  right: -35px;
 }
 
 #tns2-mw.tns-ovh{
   padding-bottom: 10px;
+}
+
+.depoimentos-carousel .tns-inner .tns-slider{
+  display: flex;
+  column-gap: 10px;
+  padding: 2px 0;
 }
 
 @media(max-width: 1535px){
@@ -3642,6 +3648,12 @@ h6,
   }
   .tns-controls button[data-controls="next"] {
     inset-inline-end: 0;
+  }
+}
+
+@media(max-width: 768px){
+  .depoimentos-carousel .tns-inner .tns-slider{
+    column-gap: 0;
   }
 }
 
