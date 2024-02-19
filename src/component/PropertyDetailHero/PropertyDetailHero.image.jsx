@@ -20,8 +20,9 @@ function Image({ src, index, containerClassName, onClick }) {
     >
       <img
         src={src}
-        className={"object-cover w-full h-full group-hover:brightness-50 duration-500 ease-in-out"}
+        className={"object-cover w-full h-full group-hover:brightness-50 duration-500 ease-in-out cursor-pointer"}
         alt={`property ${index && index + 1}`}
+        onClick={onClick}
       />
 
       {/* centered overlay */}
