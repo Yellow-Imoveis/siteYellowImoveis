@@ -174,10 +174,18 @@ const SearchForm = ({ option, handleSubmitForm }) => {
       render={({ field }) => (
         <Select 
           placeholder="Escolha a categoria" 
-          className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 dark:bg-slate-800 border-0" 
+          className="form-input filter-input-box sm:ps-11 sm:pe-2 lg:ps-4 lg:pe-4 xl:ps-11 xl:pe-2 bg-gray-50 text-black dark:bg-slate-800 border-0" 
           options={categories} 
           isLoading={isLoading} 
           loadingMessage={() => 'Carregando categorias...'} 
+          styles={{
+            groupHeading: (base) => ({
+              ...base,
+              backgroundColor: "#888888",
+              color: "white",
+              padding: "10px"
+            })
+          }}
           {...field} 
           // value={categories && categories.find((c) => c.value === field.value)}
                           value={categories && categories.find((c) => {
