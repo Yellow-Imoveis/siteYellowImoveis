@@ -3657,6 +3657,18 @@ h6,
   }
 }
 
+.range::-webkit-slider-thumb{
+  background-color: #000;
+}
+
+.range::-ms-thumb{
+  background-color: #000;
+}
+
+.range::-moz-range-thumb{
+  background-color: #000
+}
+
 /* RTL */
 html[dir="rtl"] .tns-inner,
 html[dir="rtl"] .tns-nav {
@@ -4004,6 +4016,19 @@ html[dir="rtl"] .tns-visually-hidden {
   top: 2px;
   inset-inline-end: 3px;
   height: 46px;
+}
+
+.input-range {
+  -webkit-appearance: none;
+}
+
+.input-range::-webkit-slider-thumb{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background-color: #000;
 }
 
 /*****************/
