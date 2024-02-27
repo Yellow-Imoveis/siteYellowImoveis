@@ -54,11 +54,11 @@ export default function Client() {
                 <div className="flex w-full justify-center  relative mt-16">
                     <div className="relative min-[1124px]:w-full w-3/4">
                         <div className="absolute -top-24 md:-start-20 -left-20">
-                            <i className="mdi mdi-format-quote-open text-9xl opacity-5"></i>
+                            <i className="hidden sm:block mdi mdi-format-quote-open text-9xl opacity-5"></i>
                         </div>
 
                         <div className="absolute -bottom-20 md:-end-20 -end-20">
-                            <i className="mdi mdi-format-quote-close text-9xl opacity-5"></i>
+                            <i className="hidden sm:block mdi mdi-format-quote-close text-9xl opacity-5"></i>
                         </div>
 
                         {isLoading && (
