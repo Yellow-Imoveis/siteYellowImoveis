@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const http = axios.create({
-    baseURL: "https://yellow.forepoint.com.br/api",
+    baseURL: "https://crm.yellowimoveis.com.br/api",
     // baseURL: "http://yellowimoveis.test/api",
     timeout: 30000,
     headers: {
